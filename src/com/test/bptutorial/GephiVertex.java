@@ -7,6 +7,7 @@ import com.tinkerpop.blueprints.Vertex;
 import com.tinkerpop.blueprints.Edge;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.VertexQuery;
+import org.gephi.graph.api.EdgeIterable;
 import org.gephi.graph.api.Node;
 import org.gephi.graph.store.*;
 
@@ -20,7 +21,17 @@ public class GephiVertex extends GephiElement implements Vertex {
     }
 
     public Iterable<Edge> getEdges(Direction direction, String... labels){
-        return null;
+        if(direction.equals(Direction.OUT)){
+            //return graph.getGraphStore().getOutEdges(this.node);
+            return null;
+        }
+        else if(direction.equals(Direction.IN)){
+            return null;
+        }
+        else{
+            return null;
+        }
+
     }
     public Iterable<Vertex> getVertices(Direction direction, String... labels){
         return null;
@@ -31,5 +42,14 @@ public class GephiVertex extends GephiElement implements Vertex {
     public Edge addEdge(String label, Vertex inVertex){
         return null;
     }
+
+    /*private class GephiVertexEdgeIterable<T extends Edge> implements Iterable<GephiEdge>{
+        private GephiGraph graph;
+        private NodeImpl node;
+        private Dire
+
+
+    }*/
+
 
 }

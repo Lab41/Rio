@@ -67,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiElement.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#298#299#0" expanded="true" />
@@ -80,38 +80,70 @@
       <file leaf-file-name="GephiVertex.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiVertex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
+              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#992#993#0" expanded="true" />
+                <element signature="e#1019#1020#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GephiGraph.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GephiGraph.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6974026" vertical-offset="273" max-vertical-offset="1245">
-              <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="1440">
+              <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#718#719#0" expanded="true" />
-                <element signature="e#756#757#0" expanded="true" />
-                <element signature="e#792#793#0" expanded="true" />
-                <element signature="e#819#820#0" expanded="true" />
-                <element signature="e#1248#1249#0" expanded="true" />
-                <element signature="e#1275#1276#0" expanded="true" />
-                <element signature="e#1342#1343#0" expanded="true" />
-                <element signature="e#1369#1370#0" expanded="true" />
-                <element signature="e#1834#1835#0" expanded="true" />
-                <element signature="e#1861#1862#0" expanded="true" />
-                <element signature="e#1945#1946#0" expanded="true" />
-                <element signature="e#1972#1973#0" expanded="true" />
-                <element signature="e#2034#2035#0" expanded="true" />
-                <element signature="e#2061#2062#0" expanded="true" />
-                <element signature="e#2092#2093#0" expanded="true" />
-                <element signature="e#2119#2120#0" expanded="true" />
+                <element signature="e#774#775#0" expanded="true" />
+                <element signature="e#812#813#0" expanded="true" />
+                <element signature="e#848#849#0" expanded="true" />
+                <element signature="e#875#876#0" expanded="true" />
+                <element signature="e#1700#1701#0" expanded="true" />
+                <element signature="e#1727#1728#0" expanded="true" />
+                <element signature="e#2372#2373#0" expanded="true" />
+                <element signature="e#2447#2448#0" expanded="true" />
+                <element signature="e#2485#2486#0" expanded="true" />
+                <element signature="e#2559#2560#0" expanded="true" />
+                <element signature="e#2621#2622#0" expanded="true" />
+                <element signature="e#2648#2649#0" expanded="true" />
+                <element signature="e#2679#2680#0" expanded="true" />
+                <element signature="e#2729#2730#0" expanded="true" />
+                <element signature="e#2769#2770#0" expanded="true" />
+                <element signature="e#2804#2805#0" expanded="true" />
+                <element signature="e#2833#2834#0" expanded="true" />
+                <element signature="e#2864#2865#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GephiVertexIterable.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiVertexIterable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.191067" vertical-offset="512" max-vertical-offset="975">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1287#1288#0" expanded="true" />
+                <element signature="e#1335#1336#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GephiEdgeIterable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiEdgeIterable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="945">
+              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1268#1269#0" expanded="true" />
+                <element signature="e#1316#1317#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,7 +153,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiEdge.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#993#994#0" expanded="true" />
@@ -157,17 +189,18 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/test/bptutorial/HellowWorld.java" />
         <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiElement.java" />
-        <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiVertex.java" />
+        <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiEdgeIterable.java" />
         <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiEdge.java" />
+        <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiVertexIterable.java" />
         <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiGraph.java" />
+        <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiVertex.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1837" />
-    <option name="y" value="-1358" />
-    <option name="width" value="2345" />
-    <option name="height" value="1113" />
+    <option name="y" value="22" />
+    <option name="width" value="1434" />
+    <option name="height" value="746" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -255,7 +288,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/fastutil-6.5.15.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../graphstore" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -528,15 +561,15 @@
       <changelist id="a0891665-fb4b-4d7e-b717-2ee3ecbbc1e1" name="Default" comment="" />
       <created>1405440563536</created>
       <updated>1405440563536</updated>
-      <workItem from="1405440564799" duration="39599000" />
+      <workItem from="1405440564799" duration="60535000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39599000" />
+    <option name="totallyTimeSpent" value="60535000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1837" y="-1358" width="2345" height="1113" extended-state="6" />
+    <frame x="0" y="22" width="1434" height="746" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -558,8 +591,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10855406" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21764706" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1795977" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33996937" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -688,6 +721,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/Downloads/graphstore-0.1-20140621.130016-87-jar.jar!/org/gephi/graph/store/ElementImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30947137" vertical-offset="34" max-vertical-offset="1980">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/HellowWorld.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
@@ -698,32 +739,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiVertex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiEdge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#993#994#0" expanded="true" />
@@ -734,28 +753,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiGraph.java">
+    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6974026" vertical-offset="273" max-vertical-offset="1245">
-          <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#792#793#0" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
-            <element signature="e#1248#1249#0" expanded="true" />
-            <element signature="e#1275#1276#0" expanded="true" />
-            <element signature="e#1342#1343#0" expanded="true" />
-            <element signature="e#1369#1370#0" expanded="true" />
-            <element signature="e#1834#1835#0" expanded="true" />
-            <element signature="e#1861#1862#0" expanded="true" />
-            <element signature="e#1945#1946#0" expanded="true" />
-            <element signature="e#1972#1973#0" expanded="true" />
-            <element signature="e#2034#2035#0" expanded="true" />
-            <element signature="e#2061#2062#0" expanded="true" />
-            <element signature="e#2092#2093#0" expanded="true" />
-            <element signature="e#2119#2120#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiEdgeIterable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="945">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1268#1269#0" expanded="true" />
+            <element signature="e#1316#1317#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiVertex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#992#993#0" expanded="true" />
+            <element signature="e#1019#1020#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="1440">
+          <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#875#876#0" expanded="true" />
+            <element signature="e#1700#1701#0" expanded="true" />
+            <element signature="e#1727#1728#0" expanded="true" />
+            <element signature="e#2372#2373#0" expanded="true" />
+            <element signature="e#2447#2448#0" expanded="true" />
+            <element signature="e#2485#2486#0" expanded="true" />
+            <element signature="e#2559#2560#0" expanded="true" />
+            <element signature="e#2621#2622#0" expanded="true" />
+            <element signature="e#2648#2649#0" expanded="true" />
+            <element signature="e#2679#2680#0" expanded="true" />
+            <element signature="e#2729#2730#0" expanded="true" />
+            <element signature="e#2769#2770#0" expanded="true" />
+            <element signature="e#2804#2805#0" expanded="true" />
+            <element signature="e#2833#2834#0" expanded="true" />
+            <element signature="e#2864#2865#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiVertexIterable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.191067" vertical-offset="512" max-vertical-offset="975">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1287#1288#0" expanded="true" />
+            <element signature="e#1335#1336#0" expanded="true" />
           </folding>
         </state>
       </provider>
