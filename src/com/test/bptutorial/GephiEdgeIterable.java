@@ -4,17 +4,17 @@ package com.test.bptutorial;
  * Created by aganesh on 7/17/14.
  */
 import com.tinkerpop.blueprints.CloseableIterable;
-import com.tinkerpop.blueprints.Edge;
-import org.gephi.graph.store.EdgeImpl;
+
+import org.gephi.graph.api.Edge;
 
 import java.util.Iterator;
 
-public class GephiEdgeIterable <T extends Edge> implements CloseableIterable<GephiEdge> {
+public class GephiEdgeIterable <T extends com.tinkerpop.blueprints.Edge> implements CloseableIterable<GephiEdge> {
 
-    private Iterable<EdgeImpl> edges;
+    private Iterable<Edge> edges;
     private GephiGraph graph;
 
-    public GephiEdgeIterable(Iterable<EdgeImpl> edges, GephiGraph graph){
+    public GephiEdgeIterable(Iterable<Edge> edges, GephiGraph graph){
         this.graph = graph;
         this.edges = edges;
     }
@@ -22,7 +22,7 @@ public class GephiEdgeIterable <T extends Edge> implements CloseableIterable<Gep
     public Iterator<GephiEdge> iterator(){
         return new Iterator<GephiEdge>() {
 
-            private Iterator<EdgeImpl> it = edges.iterator();
+            private Iterator<Edge> it = edges.iterator();
 
             @Override
             public boolean hasNext() {

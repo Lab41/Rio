@@ -1,27 +1,26 @@
 package com.test.bptutorial;
 
-import com.tinkerpop.blueprints.IndexableGraph;
-import com.tinkerpop.blueprints.KeyIndexableGraph;
-import com.tinkerpop.blueprints.MetaGraph;
-import com.tinkerpop.blueprints.TransactionalGraph;
-import com.tinkerpop.blueprints.Parameter;
-import com.tinkerpop.blueprints.Graph;
+
+
 import com.tinkerpop.blueprints.Features;
-import com.tinkerpop.blueprints.*;
+import com.tinkerpop.blueprints.Vertex;
+import com.tinkerpop.blueprints.GraphQuery;
 import com.tinkerpop.blueprints.util.DefaultGraphQuery;
 import com.tinkerpop.blueprints.util.ExceptionFactory;
-import org.gephi.graph.store.EdgeImpl;
-import org.gephi.graph.store.GraphStore;
+import org.gephi.graph.api.Graph;
+import org.gephi.graph.api.Node;
 import org.gephi.graph.store.NodeImpl;
+import org.gephi.graph.store.EdgeImpl;
+
 
 /**
  * Created by aganesh on 7/15/14.
  */
-public class GephiGraph implements Graph{
+public class GephiGraph implements com.tinkerpop.blueprints.Graph{
 
-    private GraphStore graphDb;
+    private Graph graphDb;
 
-    public GephiGraph(GraphStore graphDb ){
+    public GephiGraph(Graph graphDb){
         this.graphDb = graphDb;
     }
 
@@ -29,7 +28,7 @@ public class GephiGraph implements Graph{
         return null;
     }
     public Vertex addVertex(Object id){
-        NodeImpl node = new NodeImpl(id);
+        Node node = new NodeImpl(id);
         this.graphDb.addNode(node);
         return new GephiVertex(node,this);
     }
@@ -37,9 +36,11 @@ public class GephiGraph implements Graph{
         if (id == null) throw ExceptionFactory.vertexIdCanNotBeNull();
         return new GephiVertex(new NodeImpl(id),this);
     }
+
+
     public void removeVertex(Vertex vertex){
         try {
-            NodeImpl node = new NodeImpl(vertex.getId());
+            Node node = new NodeImpl(vertex.getId());
             this.graphDb.removeNode(node);
         } catch (IllegalStateException ise){
             throw ExceptionFactory.vertexWithIdDoesNotExist(vertex.getId());
@@ -47,13 +48,15 @@ public class GephiGraph implements Graph{
 
     }
     public Iterable<Vertex> getVertices(){
-        return new GephiVertexIterable(this.graphDb.getNodes(),this);
+        return new GephiVertexIterable(graphDb.getNodes(),this);
 
     }
+
     public Iterable<Vertex> getVertices(String key, Object value){
         return null;
     }
-    public Edge addEdge(Object id, Vertex outVertex, Vertex inVertex, String label){
+
+    public com.tinkerpop.blueprints.Edge addEdge(Object id, Vertex outVertex, Vertex inVertex, String label){
         NodeImpl source = new NodeImpl(outVertex.getId());
         NodeImpl target = new NodeImpl(inVertex.getId());
         EdgeImpl gsEdge = new EdgeImpl(id,source,target,0,0,false);
@@ -63,24 +66,26 @@ public class GephiGraph implements Graph{
         gephiEdge.setLabel(label);
         return gephiEdge;
     }
-    public Edge getEdge(Object id){
+    public com.tinkerpop.blueprints.Edge getEdge(Object id){
         if (id == null) throw ExceptionFactory.edgeIdCanNotBeNull();
         return new GephiEdge(this.graphDb.getEdge(id),this);
     }
-    public void removeEdge(Edge edge){
+    public void removeEdge(com.tinkerpop.blueprints.Edge edge){
         this.graphDb.removeEdge(this.graphDb.getEdge(edge.getId()));
     }
-    public Iterable<Edge> getEdges(){
+    public Iterable<com.tinkerpop.blueprints.Edge> getEdges(){
         return new GephiEdgeIterable(this.graphDb.getEdges(),this);
     }
-    public Iterable<Edge> getEdges(String key, Object value){
+
+    public Iterable<com.tinkerpop.blueprints.Edge> getEdges(String key, Object value){
         return null;
     }
+
     public GraphQuery query(){
         return new DefaultGraphQuery(this);
     }
 
-    public GraphStore getGraphStore(){
+    public Graph getGraphStore(){
         return this.graphDb;
     }
 

@@ -2,7 +2,7 @@ package com.test.bptutorial;
 
 import com.tinkerpop.blueprints.CloseableIterable;
 import com.tinkerpop.blueprints.Vertex;
-import org.gephi.graph.store.NodeImpl;
+import org.gephi.graph.api.Node;
 
 import java.util.Iterator;
 
@@ -11,10 +11,10 @@ import java.util.Iterator;
  */
 public class GephiVertexIterable<T extends Vertex> implements CloseableIterable<GephiVertex> {
 
-    private Iterable<NodeImpl> nodes;
+    private Iterable<Node> nodes;
     private GephiGraph graph;
 
-    public GephiVertexIterable(Iterable<NodeImpl> nodes, GephiGraph graph){
+    public GephiVertexIterable(Iterable<Node> nodes, GephiGraph graph){
         this.graph = graph;
         this.nodes = nodes;
     }
@@ -22,17 +22,11 @@ public class GephiVertexIterable<T extends Vertex> implements CloseableIterable<
     public Iterator<GephiVertex> iterator(){
         return new Iterator<GephiVertex>() {
 
-            private Iterator<NodeImpl> it = nodes.iterator();
+            private Iterator<Node> it = nodes.iterator();
 
             @Override
             public boolean hasNext() {
-                if(this.it.hasNext()) {
-
-                    return true;
-                }
-                else{
-                    return false;
-                }
+                return this.it.hasNext();
             }
 
             @Override

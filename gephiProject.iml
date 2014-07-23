@@ -10,7 +10,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/graphstore-0.1-20140621.130016-87-jar.jar!/" />
+          <root url="jar://$USER_HOME$/Desktop/blueprints-core-2.5.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -19,7 +19,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/blueprints-core-2.5.0.jar!/" />
+          <root url="jar://$USER_HOME$/Desktop/fastutil-6.5.15.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -28,7 +28,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/fastutil-6.5.15.jar!/" />
+          <root url="jar://$USER_HOME$/Desktop/graphstore-0.1-20140621.130016-87-jar.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

@@ -1,21 +1,19 @@
 package com.test.bptutorial;
 
-import com.tinkerpop.blueprints.Edge;
 import com.tinkerpop.blueprints.Vertex;
 import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.util.ExceptionFactory;
-import org.gephi.graph.store.EdgeImpl;
-import org.gephi.graph.store.NodeImpl;
+import org.gephi.graph.api.Edge;
 
 /**
  * Created by aganesh on 7/16/14.
  */
-public class GephiEdge extends GephiElement implements Edge {
+public class GephiEdge extends GephiElement implements com.tinkerpop.blueprints.Edge  {
 
-    private EdgeImpl edge;
+    private Edge edge;
 
 
-    public GephiEdge(EdgeImpl edge, GephiGraph graph){
+    public GephiEdge(Edge edge, GephiGraph graph){
         super(graph);
         this.edge = edge;
     }

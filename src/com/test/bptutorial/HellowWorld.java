@@ -19,6 +19,6 @@ public class HellowWorld {
         GraphStore gp = new GraphStore(gl);
         GephiGraph graph = new GephiGraph(gp);
         graph.addVertex("HI");
-        System.out.print(gp.getNodeCount());
+
     }
 }
