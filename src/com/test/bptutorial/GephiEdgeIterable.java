@@ -4,9 +4,7 @@ package com.test.bptutorial;
  * Created by aganesh on 7/17/14.
  */
 import com.tinkerpop.blueprints.CloseableIterable;
-
 import org.gephi.graph.api.Edge;
-
 import java.util.Iterator;
 
 public class GephiEdgeIterable <T extends com.tinkerpop.blueprints.Edge> implements CloseableIterable<GephiEdge> {

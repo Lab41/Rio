@@ -13,7 +13,7 @@ import java.util.*;
 public class GephiElement implements com.tinkerpop.blueprints.Element {
 
     protected GephiGraph graph;
-    private Element element;
+    protected Element element;
 
     public GephiElement(GephiGraph graph){
         this.graph = graph;
