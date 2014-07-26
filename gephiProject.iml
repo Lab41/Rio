@@ -40,6 +40,18 @@
           <root url="jar://$USER_HOME$/Downloads/blueprints-test-2.5.0.jar!/" />
         </CLASSES>
         <JAVADOC />
+        <SOURCES>
+          <root url="file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java" />
+          <root url="file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/test/java" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/junit-4.11.jar!/" />
+        </CLASSES>
+        <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>

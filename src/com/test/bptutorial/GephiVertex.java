@@ -8,6 +8,7 @@ import com.tinkerpop.blueprints.Direction;
 import com.tinkerpop.blueprints.VertexQuery;
 import com.tinkerpop.blueprints.util.DefaultVertexQuery;
 import com.tinkerpop.blueprints.util.MultiIterable;
+import com.tinkerpop.blueprints.util.StringFactory;
 import org.gephi.graph.api.Node;
 import org.gephi.graph.api.Edge;
 
@@ -21,8 +22,13 @@ public class GephiVertex extends GephiElement implements Vertex {
     private Node node;
 
     public GephiVertex(Node node, GephiGraph graph){
-        super(graph);
+        //super(graph);
+        super(graph, node);
         this.node = node;
+    }
+
+    public boolean equals(final Object object){
+        return object instanceof GephiVertex && ((GephiVertex) object).getId().equals(this.getId());
     }
 
     public Iterable<com.tinkerpop.blueprints.Edge> getEdges(Direction direction, String... labels){
@@ -37,6 +43,14 @@ public class GephiVertex extends GephiElement implements Vertex {
         }
 
     }
+    public Node getRawVertex(){
+        return this.node;
+    }
+
+    public String toString(){
+        return StringFactory.vertexString(this);
+    }
+
     public Iterable<Vertex> getVertices(Direction direction, String... labels){
         if(direction.equals(Direction.OUT)){
             return new GephiAdjacentVertexIterable(this.graph,this.node,"OUT",labels);

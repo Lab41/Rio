@@ -19,6 +19,15 @@ public class GephiElement implements com.tinkerpop.blueprints.Element {
         this.graph = graph;
     }
 
+    public GephiElement(GephiGraph graph, org.gephi.graph.api.Edge edge){
+        this.graph = graph;
+        this.element = edge;
+    }
+    public GephiElement(GephiGraph graph, org.gephi.graph.api.Node node){
+        this.graph = graph;
+        this.element = node;
+    }
+
     public <T> T getProperty(String key){
         return (T) this.element.getAttribute(key);
     }

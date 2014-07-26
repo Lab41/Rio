@@ -13,7 +13,7 @@ public class GephiEdge extends GephiElement implements com.tinkerpop.blueprints.
     private Edge edge;
 
     public GephiEdge(Edge edge, GephiGraph graph){
-        super(graph);
+        super(graph,edge);
         this.edge = edge;
     }
 
@@ -27,6 +27,10 @@ public class GephiEdge extends GephiElement implements com.tinkerpop.blueprints.
         else{
             throw ExceptionFactory.bothIsNotSupported();
         }
+    }
+
+    public Edge getRawEdge(){
+        return this.edge;
     }
 
     public void setLabel(String str){
