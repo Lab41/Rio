@@ -5,6 +5,7 @@ import com.tinkerpop.blueprints.*;
 
 import java.lang.reflect.Method;
 import com.tinkerpop.blueprints.impls.tg.TinkerGraph;
+import org.gephi.graph.store.GraphFactoryImpl;
 import org.gephi.graph.store.GraphModelImpl;
 import org.gephi.graph.store.GraphStore;
 
@@ -70,7 +71,8 @@ public class TinkerTestSuite extends GraphTest {
         //return new TinkerGraph();
         GraphModelImpl gl = new GraphModelImpl();
         GraphStore gp = new GraphStore(gl);
-        GephiGraph graph = new GephiGraph(gp);
+        GraphFactoryImpl gf = new GraphFactoryImpl(gp);
+        GephiGraph graph = new GephiGraph(gp,gf);
         return graph;
     }
 

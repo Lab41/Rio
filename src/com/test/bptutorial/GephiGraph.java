@@ -12,6 +12,7 @@ import org.gephi.graph.api.Graph;
 import org.gephi.graph.api.Node;
 import org.gephi.graph.store.NodeImpl;
 import org.gephi.graph.store.EdgeImpl;
+import org.gephi.graph.api.GraphFactory;
 import java.util.Iterator;
 
 /**
@@ -20,6 +21,8 @@ import java.util.Iterator;
 public class GephiGraph implements com.tinkerpop.blueprints.Graph{
 
     private Graph graphDb;
+    private GraphFactory graphFactory;
+
     private static final Features FEATURES = new Features();
     int counter = 0;
 
@@ -29,10 +32,9 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph{
         FEATURES.supportsEdgeIteration = true;
     }
 
-
-
-    public GephiGraph(Graph graphDb){
+    public GephiGraph(Graph graphDb, GraphFactory graphFactory){
         this.graphDb = graphDb;
+        this.graphFactory = graphFactory;
     }
 
     public Features getFeatures(){
@@ -43,10 +45,13 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph{
         this.counter++;
         //Node node = new NodeImpl(id);
         Node node;
+
         if(id == null)
-            node = new NodeImpl(this.counter);
+            //node = new NodeImpl(this.counter);
+            node = graphFactory.newNode(this.counter);
         else
-            node = new NodeImpl(id);
+            //node = new NodeImpl(id);
+            node = graphFactory.newNode(id);
 
         this.graphDb.addNode(node);
         return new GephiVertex(node,this);
@@ -54,25 +59,32 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph{
     public Vertex getVertex(Object id){
         if (id == null) throw ExceptionFactory.vertexIdCanNotBeNull();
         //return new GephiVertex(new NodeImpl(id),this);
-        return new GephiVertex(this.graphDb.getNode(id),this);
+        if(this.graphDb.getNode(id) != null ){
+            return new GephiVertex(this.graphDb.getNode(id),this);
+        }
+        else{
+            return null;
+        }
     }
 
 
     public void removeVertex(Vertex vertex){
         try {
-
             //Node node = new NodeImpl(vertex.getId());
             Node node = ((GephiVertex) vertex).getRawVertex();
 
-            System.out.println(this.graphDb.getEdgeCount());
             //Need to remove the edges associated with this vertex
-            /*Iterator<Edge> itr = this.graphDb.getEdges().iterator();
+            //Iterator<Edge> itr = this.graphDb.getEdges().iterator();
 
-            while(itr.hasNext()){
-                System.out.println(itr.hasNext());
-                //this.graphDb.removeEdge(itr.next());
+            //TODO: Figure out correcting locking mechanism
+            Edge [] edgeArray = this.graphDb.getEdges().toArray();
+
+            /*while(itr.hasNext()){
+                this.graphDb.removeEdge(itr.next());
             }*/
-
+            for(Edge x : edgeArray){
+                this.graphDb.removeEdge(x);
+            }
 
             this.graphDb.removeNode(node);
 
@@ -98,14 +110,19 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph{
         //NodeImpl source = new NodeImpl(outVertex.getId());
         //NodeImpl target = new NodeImpl(inVertex.getId());
 
-        Node source = ((GephiVertex)inVertex).getRawVertex();
+        //Node source = ((GephiVertex)inVertex).getRawVertex();
+        //Node target = ((GephiVertex)outVertex).getRawVertex();
+
+        Node source = ((GephiVertex)outVertex).getRawVertex();
         Node target = ((GephiVertex)inVertex).getRawVertex();
 
-        if(id == null){
+        /*if(id == null){
             id = counter;
-        }
+        }*/
 
-        Edge gsEdge = new EdgeImpl(id,(NodeImpl)source,(NodeImpl)target,0,0,false);
+        //Edge gsEdge = new EdgeImpl(id,(NodeImpl)source,(NodeImpl)target,0,0,false);
+        Edge gsEdge = this.graphFactory.newEdge(source,target,true);
+        //gsEdge.setLabel(label);
 
         this.graphDb.addEdge(gsEdge);
         GephiEdge gephiEdge = new GephiEdge(gsEdge,this);

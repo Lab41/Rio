@@ -10,23 +10,23 @@ import org.gephi.graph.api.Element;
 
 import java.util.*;
 
-public class GephiElement implements com.tinkerpop.blueprints.Element {
+abstract class GephiElement implements com.tinkerpop.blueprints.Element {
 
-    protected GephiGraph graph;
+    protected final GephiGraph graph;
     protected Element element;
 
     public GephiElement(GephiGraph graph){
         this.graph = graph;
     }
 
-    public GephiElement(GephiGraph graph, org.gephi.graph.api.Edge edge){
+    /*public GephiElement(GephiGraph graph, org.gephi.graph.api.Edge edge){
         this.graph = graph;
         this.element = edge;
     }
     public GephiElement(GephiGraph graph, org.gephi.graph.api.Node node){
         this.graph = graph;
         this.element = node;
-    }
+    }*/
 
     public <T> T getProperty(String key){
         return (T) this.element.getAttribute(key);

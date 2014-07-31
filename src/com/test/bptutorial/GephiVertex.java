@@ -15,16 +15,18 @@ import org.gephi.graph.api.Edge;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 
 public class GephiVertex extends GephiElement implements Vertex {
 
-    private Node node;
+    //private Node node;
 
     public GephiVertex(Node node, GephiGraph graph){
-        //super(graph);
-        super(graph, node);
-        this.node = node;
+        super(graph);
+        //super(graph, node);
+        this.element = node;
+        //this.node = node;
     }
 
     public boolean equals(final Object object){
@@ -33,18 +35,22 @@ public class GephiVertex extends GephiElement implements Vertex {
 
     public Iterable<com.tinkerpop.blueprints.Edge> getEdges(Direction direction, String... labels){
         if(direction.equals(Direction.OUT)){
-            return new GephiIncidentEdgeIterable(this.graph,this.node,"OUT",labels);
+            //return new GephiIncidentEdgeIterable(this.graph,this.node,"OUT",labels);
+            return new GephiIncidentEdgeIterable(this.graph,(Node) this.element,"OUT",labels);
         }
         else if(direction.equals(Direction.IN)){
-            return new GephiIncidentEdgeIterable(this.graph,this.node,"IN",labels);
+            //return new GephiIncidentEdgeIterable(this.graph,this.node,"IN",labels);
+            return new GephiIncidentEdgeIterable(this.graph,(Node) this.element,"IN",labels);
         }
         else{
-            return new MultiIterable(Arrays.asList(new GephiIncidentEdgeIterable(this.graph, this.node, "OUT", labels) , new GephiIncidentEdgeIterable(this.graph, this.node, "IN", labels))  );
+            //return new MultiIterable(Arrays.asList(new GephiIncidentEdgeIterable(this.graph, this.node, "OUT", labels) , new GephiIncidentEdgeIterable(this.graph, this.node, "IN", labels))  );
+            return new MultiIterable(Arrays.asList(new GephiIncidentEdgeIterable(this.graph, (Node) this.element, "OUT", labels) , new GephiIncidentEdgeIterable(this.graph, (Node)this.element, "IN", labels))  );
         }
 
     }
     public Node getRawVertex(){
-        return this.node;
+        //return this.node;
+        return (Node)this.element;
     }
 
     public String toString(){
@@ -53,13 +59,16 @@ public class GephiVertex extends GephiElement implements Vertex {
 
     public Iterable<Vertex> getVertices(Direction direction, String... labels){
         if(direction.equals(Direction.OUT)){
-            return new GephiAdjacentVertexIterable(this.graph,this.node,"OUT",labels);
+            //return new GephiAdjacentVertexIterable(this.graph,this.node,"OUT",labels);
+            return new GephiAdjacentVertexIterable(this.graph,(Node)this.element,"OUT",labels);
         }
         else if(direction.equals(Direction.IN)){
-            return new GephiAdjacentVertexIterable(this.graph,this.node,"IN",labels);
+            //return new GephiAdjacentVertexIterable(this.graph,this.node,"IN",labels);
+            return new GephiAdjacentVertexIterable(this.graph,(Node)this.element,"IN",labels);
         }
         else{
-            return new MultiIterable(Arrays.asList(new GephiAdjacentVertexIterable(this.graph, this.node, "OUT", labels) , new GephiAdjacentVertexIterable(this.graph, this.node, "IN", labels))  );
+            //return new MultiIterable(Arrays.asList(new GephiAdjacentVertexIterable(this.graph, this.node, "OUT", labels) , new GephiAdjacentVertexIterable(this.graph, this.node, "IN", labels))  );
+            return new MultiIterable(Arrays.asList(new GephiAdjacentVertexIterable(this.graph, (Node)this.element, "OUT", labels) , new GephiAdjacentVertexIterable(this.graph, (Node)this.element, "IN", labels))  );
         }
     }
     public VertexQuery query(){
@@ -67,6 +76,7 @@ public class GephiVertex extends GephiElement implements Vertex {
     }
     public com.tinkerpop.blueprints.Edge addEdge(String label, Vertex inVertex){
         return this.graph.addEdge(null,this,inVertex,label);
+
     }
 
     private class GephiAdjacentVertexIterable<T extends com.tinkerpop.blueprints.Vertex> implements Iterable<GephiVertex>{
@@ -163,53 +173,85 @@ public class GephiVertex extends GephiElement implements Vertex {
             for(String i:labels) labelHashSet.add(i);
         }
 
+
         public Iterator<GephiEdge> iterator(){
 
             final Iterator<Edge> itIn = graph.getGraphStore().getEdges(node).iterator();
             final Iterator<Edge> itOut = graph.getGraphStore().getEdges(node).iterator();
 
             return new Iterator<GephiEdge>() {
+
+                Edge nextEdge = null;
                 @Override
                 public boolean hasNext() {
+
+                    if (nextEdge != null) {
+                        return true;
+                    }
+
+
+                    //Search for the next thing
                     if (direction.equals("IN")) {
-                        while(itIn.hasNext()){
-                            if (labelHashSet.contains(itIn.next().getTarget().getLabel())) {
-                                return true;
+                        while (itIn.hasNext()) {
+                            Edge temp = itIn.next();
+                            if (temp.getTarget().equals(node)) {
+                                if (labelHashSet.contains(temp.getLabel())) {
+                                    nextEdge = temp;
+                                    return true;
+                                }
                             }
                         }
-                    }
 
-                    else if(direction.equals("OUT")){
-                        while(itOut.hasNext()) {
-                            if (labelHashSet.contains(itOut.next().getSource().getLabel())) {
-                                return true;
+                    } else {
+                        while (itOut.hasNext()) {
+                            Edge temp = itOut.next();
+                            if (temp.getSource().equals(node)) {
+                                if (labelHashSet.contains(temp.getLabel())) {
+                                    nextEdge = temp;
+                                    return true;
+                                }
                             }
                         }
-                    }
 
+                    }
                     return false;
                 }
 
                 @Override
                 public GephiEdge next() {
+
+                    if(nextEdge != null){
+                        Edge temp = nextEdge;
+                        nextEdge = null;
+                        return new GephiEdge(temp,graph);
+                    }
+
+                    //Search for the next thing
                     if (direction.equals("IN")) {
-                        while(itIn.hasNext()){
-                            if (labelHashSet.contains(itIn.next().getTarget().getLabel())) {
-                                return new GephiEdge(itIn.next(),graph);
+                        while (itIn.hasNext()) {
+                            Edge temp = itIn.next();
+                            if (temp.getTarget().equals(node)) {
+                                if (labelHashSet.contains(temp.getLabel())) {
+
+                                    return new GephiEdge(temp,graph);
+                                }
                             }
                         }
-                    }
 
-                    else if(direction.equals("OUT")){
-                        while(itOut.hasNext()) {
-                            if (labelHashSet.contains(itOut.next().getSource().getLabel())) {
-                                return new GephiEdge(itOut.next(),graph);
+                    } else {
+                        while (itOut.hasNext()) {
+                            Edge temp = itOut.next();
+                            if (temp.getSource().equals(node)) {
+                                if (labelHashSet.contains(temp.getLabel())) {
+
+                                    return new GephiEdge(temp, graph);
+                                }
                             }
                         }
+
                     }
 
-                    return new GephiEdge(null,graph);
-
+                    throw new NoSuchElementException();
 
                 }
 
