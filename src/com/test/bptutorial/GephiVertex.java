@@ -23,8 +23,8 @@ public class GephiVertex extends GephiElement implements Vertex {
     //private Node node;
 
     public GephiVertex(Node node, GephiGraph graph){
-        super(graph);
-        //super(graph, node);
+        //super(graph);
+        super(graph, node);
         this.element = node;
         //this.node = node;
     }

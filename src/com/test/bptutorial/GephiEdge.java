@@ -14,8 +14,8 @@ public class GephiEdge extends GephiElement implements com.tinkerpop.blueprints.
     //private Edge edge;
 
     public GephiEdge(Edge edge, GephiGraph graph){
-        //super(graph,edge);
-        super(graph);
+        super(graph,edge);
+        //super(graph);
         this.element = edge;
         //this.edge = edge;
     }
