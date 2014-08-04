@@ -70,9 +70,9 @@ public class TinkerTestSuite extends GraphTest {
     public Graph generateGraph() {
         //return new TinkerGraph();
         GraphModelImpl gl = new GraphModelImpl();
-        GraphStore gp = new GraphStore(gl);
-        GraphFactoryImpl gf = new GraphFactoryImpl(gp);
-        GephiGraph graph = new GephiGraph(gp,gf);
+        //GraphStore gp = new GraphStore(gl);
+        //GraphFactoryImpl gf = new GraphFactoryImpl(gp);
+        GephiGraph graph = new GephiGraph(gl);
         return graph;
     }
 
