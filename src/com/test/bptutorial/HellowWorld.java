@@ -37,16 +37,17 @@ public class HellowWorld {
 
         GraphModelImpl gl = new GraphModelImpl();
 
+        //GraphStore gp = new GraphStore(gl);
+        //GraphFactoryImpl gf = new GraphFactoryImpl(gp);
 
+        //GephiGraph graph = new GephiGraph(gl.getGraph(),gl.factory());
+        //gl.getNodeTable();
 
-        GraphStore gp = new GraphStore(gl);
-        GraphFactoryImpl gf = new GraphFactoryImpl(gp);
-        GephiGraph graph = new GephiGraph(gp,gf);
-        gl.getNodeTable();
+        Node node = gl.factory().newNode("2");
 
-        Node node = gf.newNode("2");
-        node.setAttribute("key1","vale1");
-
+        gl.getNodeTable().addColumn("key1",String.class);
+        node.setAttribute("key1","value1");
+        System.out.println(node.getAttribute("key1"));
         //node.setAttribute("HI","G");
 
 
