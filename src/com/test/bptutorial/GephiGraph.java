@@ -158,6 +158,10 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph{
         return this.graphModel.getGraph();
     }
 
+    public GraphModel getGraphModel(){
+        return this.graphModel;
+    }
+
     public void shutdown(){
         //this.shutdown();
     }

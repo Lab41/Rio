@@ -48,6 +48,8 @@ public class HellowWorld {
         gl.getNodeTable().addColumn("key1",String.class);
         node.setAttribute("key1","value1");
         System.out.println(node.getAttribute("key1"));
+
+        System.out.println(gl.getNodeTable().hasColumn("key1"));
         //node.setAttribute("HI","G");
 
 

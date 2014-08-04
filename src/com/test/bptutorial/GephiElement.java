@@ -45,8 +45,27 @@ abstract class GephiElement implements com.tinkerpop.blueprints.Element {
         ElementHelper.validateProperty(this, key, value);
         //this.table.addColumn(key,value.getClass());
         //this.atr.getNodeTable().addColumn(key,value.getClass());
+        if(this instanceof Vertex){
+            if(this.graph.getGraphModel().getNodeTable().hasColumn(key)){
+                this.element.setAttribute(key,value);
+            }
+            else{
+                this.graph.getGraphModel().getNodeTable().addColumn(key,value.getClass());
+                this.element.setAttribute(key,value);
+            }
+        }
+        else{
+            if(this.graph.getGraphModel().getEdgeTable().hasColumn(key)){
+                this.element.setAttribute(key,value);
+            }
+            else{
+                this.graph.getGraphModel().getEdgeTable().addColumn(key,value.getClass());
+                this.element.setAttribute(key,value);
+            }
 
-        this.element.setAttribute(key , value);
+        }
+
+        //this.element.setAttribute(key , value);
 
     }
     public <T> T removeProperty(String key){
