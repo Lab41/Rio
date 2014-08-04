@@ -63,87 +63,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GephiElement.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiElement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
-              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-              <folding>
-                <element signature="e#751#752#0" expanded="true" />
-                <element signature="e#808#809#0" expanded="true" />
-                <element signature="e#851#852#0" expanded="true" />
-                <element signature="e#905#906#0" expanded="true" />
-                <element signature="e#959#960#0" expanded="true" />
-                <element signature="e#1011#1012#0" expanded="true" />
-                <element signature="e#1056#1057#0" expanded="true" />
-                <element signature="e#1115#1116#0" expanded="true" />
-                <element signature="e#1321#1322#0" expanded="true" />
-                <element signature="e#1359#1360#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GephiEdge.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiEdge.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="960">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1126#1127#0" expanded="true" />
-                <element signature="e#1168#1169#0" expanded="true" />
-                <element signature="e#1199#1200#0" expanded="true" />
-                <element signature="e#1252#1253#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GephiVertexIterable.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiVertexIterable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="1320">
-              <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2378#2379#0" expanded="true" />
-                <element signature="e#2426#2427#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GephiEdgeIterable.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiEdgeIterable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1395">
-              <caret line="68" column="63" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2415#2416#0" expanded="true" />
-                <element signature="e#2463#2464#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GephiGraph.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GephiGraph.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2295">
-              <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.48267326" vertical-offset="315" max-vertical-offset="2220">
+              <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
               <folding>
-                <element signature="e#1114#1115#0" expanded="true" />
-                <element signature="e#1145#1146#0" expanded="true" />
-                <element signature="e#2942#2943#0" expanded="true" />
-                <element signature="e#2969#2970#0" expanded="true" />
-                <element signature="e#4525#4526#0" expanded="true" />
-                <element signature="e#4552#4553#0" expanded="true" />
-                <element signature="e#4584#4585#0" expanded="true" />
-                <element signature="e#4634#4635#0" expanded="true" />
-                <element signature="e#4669#4670#0" expanded="true" />
-                <element signature="e#4704#4705#0" expanded="true" />
+                <element signature="e#1261#1262#0" expanded="true" />
+                <element signature="e#1292#1293#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,24 +79,57 @@
       <file leaf-file-name="GephiVertex.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiVertex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3119" max-vertical-offset="4020">
-              <caret line="218" column="0" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3960">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GephiElement.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiElement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="900">
+              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
-                <element signature="e#2111#2112#0" expanded="true" />
-                <element signature="e#2166#2167#0" expanded="true" />
-                <element signature="e#3205#3206#0" expanded="true" />
-                <element signature="e#3256#3257#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HellowWorld.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/HellowWorld.java">
+      <file leaf-file-name="GephiVertexIterable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiVertexIterable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="915">
-              <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="1290">
+              <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GephiEdge.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiEdge.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="496" max-vertical-offset="900">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GephiEdgeIterable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiEdgeIterable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="1365">
+              <caret line="68" column="63" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -177,32 +137,20 @@
       <file leaf-file-name="TinkerTestSuite.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/TinkerTestSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="931" max-vertical-offset="1500">
-              <caret line="70" column="35" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="991" max-vertical-offset="1470">
+              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2717#2718#0" expanded="true" />
-                <element signature="e#2755#2756#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VertexTestSuite.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="VertexTestSuite.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5641593" vertical-offset="3030" max-vertical-offset="8490">
-              <caret line="228" column="0" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/BaseTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="1635">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="3226" max-vertical-offset="8490">
+              <caret line="233" column="0" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -220,18 +168,18 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiVertexIterable.java" />
         <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiEdgeIterable.java" />
-        <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiElement.java" />
         <option value="$PROJECT_DIR$/src/com/test/bptutorial/TinkerTestSuite.java" />
         <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiEdge.java" />
+        <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiVertex.java" />
         <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiGraph.java" />
         <option value="$PROJECT_DIR$/src/com/test/bptutorial/HellowWorld.java" />
-        <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiVertex.java" />
+        <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiElement.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="6" />
-    <option name="y" value="22" />
+    <option name="x" value="4" />
+    <option name="y" value="24" />
     <option name="width" value="1276" />
     <option name="height" value="778" />
   </component>
@@ -662,16 +610,16 @@
       <workItem from="1405440564799" duration="60535000" />
       <workItem from="1405748781404" duration="241000" />
       <workItem from="1405749035538" duration="4604000" />
-      <workItem from="1406048908927" duration="129531000" />
+      <workItem from="1406048908927" duration="148452000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194911000" />
+    <option name="totallyTimeSpent" value="213832000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="6" y="22" width="1276" height="778" extended-state="0" />
-    <editor active="true" />
+    <frame x="4" y="24" width="1276" height="778" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -680,9 +628,9 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3906911" sideWeight="0.61442006" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3906911" sideWeight="0.61442006" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32299012" sideWeight="0.43730408" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3906911" sideWeight="0.38557994" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -693,7 +641,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17946708" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32299012" sideWeight="0.5626959" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32299012" sideWeight="0.5626959" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -750,27 +698,45 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java</url>
-          <line>219</line>
+          <line>232</line>
           <properties />
-          <option name="timeStamp" value="56" />
+          <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java</url>
-          <line>220</line>
+          <line>233</line>
           <properties />
-          <option name="timeStamp" value="60" />
+          <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java</url>
-          <line>221</line>
+          <line>234</line>
           <properties />
-          <option name="timeStamp" value="61" />
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/test/bptutorial/HellowWorld.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/test/bptutorial/HellowWorld.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/test/bptutorial/HellowWorld.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="74" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="65" />
+      <option name="time" value="75" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -783,16 +749,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
           <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
           <folding>
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#808#809#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
-            <element signature="e#1011#1012#0" expanded="true" />
-            <element signature="e#1056#1057#0" expanded="true" />
-            <element signature="e#1115#1116#0" expanded="true" />
-            <element signature="e#1321#1322#0" expanded="true" />
-            <element signature="e#1359#1360#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -801,12 +758,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="915">
           <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding>
-            <element signature="e#2111#2112#0" expanded="true" />
-            <element signature="e#2166#2167#0" expanded="true" />
-            <element signature="e#3205#3206#0" expanded="true" />
-            <element signature="e#3256#3257#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -815,16 +767,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="233" max-vertical-offset="1425">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
-            <element signature="e#1114#1115#0" expanded="true" />
-            <element signature="e#1145#1146#0" expanded="true" />
-            <element signature="e#2942#2943#0" expanded="true" />
-            <element signature="e#2969#2970#0" expanded="true" />
-            <element signature="e#4525#4526#0" expanded="true" />
-            <element signature="e#4552#4553#0" expanded="true" />
-            <element signature="e#4584#4585#0" expanded="true" />
-            <element signature="e#4634#4635#0" expanded="true" />
-            <element signature="e#4669#4670#0" expanded="true" />
-            <element signature="e#4704#4705#0" expanded="true" />
+            <element signature="e#1261#1262#0" expanded="true" />
+            <element signature="e#1292#1293#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -835,8 +779,6 @@
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2378#2379#0" expanded="true" />
-            <element signature="e#2426#2427#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -847,8 +789,6 @@
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2415#2416#0" expanded="true" />
-            <element signature="e#2463#2464#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -859,10 +799,6 @@
           <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1126#1127#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
-            <element signature="e#1199#1200#0" expanded="true" />
-            <element signature="e#1252#1253#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -882,16 +818,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="660">
           <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
           <folding>
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#808#809#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
-            <element signature="e#1011#1012#0" expanded="true" />
-            <element signature="e#1056#1057#0" expanded="true" />
-            <element signature="e#1115#1116#0" expanded="true" />
-            <element signature="e#1321#1322#0" expanded="true" />
-            <element signature="e#1359#1360#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -900,12 +827,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="915">
           <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding>
-            <element signature="e#2111#2112#0" expanded="true" />
-            <element signature="e#2166#2167#0" expanded="true" />
-            <element signature="e#3205#3206#0" expanded="true" />
-            <element signature="e#3256#3257#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -914,16 +836,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="1440">
           <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
           <folding>
-            <element signature="e#1114#1115#0" expanded="true" />
-            <element signature="e#1145#1146#0" expanded="true" />
-            <element signature="e#2942#2943#0" expanded="true" />
-            <element signature="e#2969#2970#0" expanded="true" />
-            <element signature="e#4525#4526#0" expanded="true" />
-            <element signature="e#4552#4553#0" expanded="true" />
-            <element signature="e#4584#4585#0" expanded="true" />
-            <element signature="e#4634#4635#0" expanded="true" />
-            <element signature="e#4669#4670#0" expanded="true" />
-            <element signature="e#4704#4705#0" expanded="true" />
+            <element signature="e#1261#1262#0" expanded="true" />
+            <element signature="e#1292#1293#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -934,8 +848,6 @@
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2378#2379#0" expanded="true" />
-            <element signature="e#2426#2427#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -946,8 +858,6 @@
           <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2415#2416#0" expanded="true" />
-            <element signature="e#2463#2464#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -958,10 +868,6 @@
           <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1126#1127#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
-            <element signature="e#1199#1200#0" expanded="true" />
-            <element signature="e#1252#1253#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -981,16 +887,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="660">
           <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
           <folding>
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#808#809#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
-            <element signature="e#1011#1012#0" expanded="true" />
-            <element signature="e#1056#1057#0" expanded="true" />
-            <element signature="e#1115#1116#0" expanded="true" />
-            <element signature="e#1321#1322#0" expanded="true" />
-            <element signature="e#1359#1360#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -999,12 +896,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="915">
           <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding>
-            <element signature="e#2111#2112#0" expanded="true" />
-            <element signature="e#2166#2167#0" expanded="true" />
-            <element signature="e#3205#3206#0" expanded="true" />
-            <element signature="e#3256#3257#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1013,16 +905,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="1440">
           <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
           <folding>
-            <element signature="e#1114#1115#0" expanded="true" />
-            <element signature="e#1145#1146#0" expanded="true" />
-            <element signature="e#2942#2943#0" expanded="true" />
-            <element signature="e#2969#2970#0" expanded="true" />
-            <element signature="e#4525#4526#0" expanded="true" />
-            <element signature="e#4552#4553#0" expanded="true" />
-            <element signature="e#4584#4585#0" expanded="true" />
-            <element signature="e#4634#4635#0" expanded="true" />
-            <element signature="e#4669#4670#0" expanded="true" />
-            <element signature="e#4704#4705#0" expanded="true" />
+            <element signature="e#1261#1262#0" expanded="true" />
+            <element signature="e#1292#1293#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1033,8 +917,6 @@
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2378#2379#0" expanded="true" />
-            <element signature="e#2426#2427#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1045,8 +927,6 @@
           <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2415#2416#0" expanded="true" />
-            <element signature="e#2463#2464#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1057,10 +937,6 @@
           <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1126#1127#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
-            <element signature="e#1199#1200#0" expanded="true" />
-            <element signature="e#1252#1253#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1072,13 +948,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Desktop/graphstore-0.1-20140621.130016-87-jar.jar!/org/gephi/graph/store/NodeImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12479201" vertical-offset="0" max-vertical-offset="2520">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1114,22 +983,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Desktop/graphstore-0.1-20140621.130016-87-jar.jar!/org/gephi/graph/store/GraphStore.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.12" vertical-offset="1492" max-vertical-offset="3600">
-          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Desktop/graphstore-0.1-20140621.130016-87-jar.jar!/org/gephi/graph/store/ElementImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.52" vertical-offset="562" max-vertical-offset="1980">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_60.jdk/Contents/Home/src.zip!/java/util/Iterator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.039604" vertical-offset="0" max-vertical-offset="1050">
@@ -1146,55 +999,166 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/HellowWorld.java">
+    <entry file="jar://$USER_HOME$/Desktop/graphstore-0.1-20140621.130016-87-jar.jar!/org/gephi/graph/store/GraphLock.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="376" max-vertical-offset="915">
-          <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+        <state vertical-scroll-proportion="-11.96" vertical-offset="31" max-vertical-offset="435">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiElement.java">
+    <entry file="jar://$USER_HOME$/Desktop/graphstore-0.1-20140621.130016-87-jar.jar!/org/gephi/graph/store/GraphStore.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        <state vertical-scroll-proportion="-4.88" vertical-offset="403" max-vertical-offset="3600">
+          <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/junit-4.11.jar!/org/junit/runner/notification/RunNotifier.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="223" max-vertical-offset="780">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/fastutil-6.5.15.jar!/it/unimi/dsi/fastutil/HashCommon.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.96" vertical-offset="151" max-vertical-offset="555">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/fastutil-6.5.15.jar!/it/unimi/dsi/fastutil/objects/Object2ShortOpenHashMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.88" vertical-offset="718" max-vertical-offset="3240">
+          <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/graphstore-0.1-20140621.130016-87-jar.jar!/org/gephi/graph/store/TableLock.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.2" vertical-offset="0" max-vertical-offset="285">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/graphstore-0.1-20140621.130016-87-jar.jar!/org/gephi/graph/store/ColumnStore.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.88" vertical-offset="433" max-vertical-offset="1485">
+          <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/graphstore-0.1-20140621.130016-87-jar.jar!/org/gephi/graph/store/ElementImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="1123" max-vertical-offset="1980">
+          <caret line="84" column="9" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/graphstore-0.1-20140621.130016-87-jar.jar!/org/gephi/graph/store/TextPropertiesImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.353562" vertical-offset="31" max-vertical-offset="840">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/graphstore-0.1-20140621.130016-87-jar.jar!/org/gephi/graph/store/NodeImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33245382" vertical-offset="324" max-vertical-offset="2520">
+          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/graphstore-0.1-20140621.130016-87-jar.jar!/org/gephi/graph/store/GraphFactoryImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="238" max-vertical-offset="645">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/blueprints-core-2.5.0.jar!/com/tinkerpop/blueprints/util/ElementHelper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.8" vertical-offset="0" max-vertical-offset="555">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/junit-4.11.jar!/org/junit/runner/Description.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.88" vertical-offset="238" max-vertical-offset="1125">
+          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/junit-4.11.jar!/org/junit/internal/runners/JUnit38ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.04" vertical-offset="459" max-vertical-offset="825">
+          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/junit-4.11.jar!/org/junit/runner/notification/Failure.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.353562" vertical-offset="16" max-vertical-offset="435">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/HellowWorld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5173267" vertical-offset="106" max-vertical-offset="1140">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiVertex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3960">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3226" max-vertical-offset="8490">
+          <caret line="233" column="0" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/TinkerTestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="991" max-vertical-offset="1470">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding>
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#808#809#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
-            <element signature="e#1011#1012#0" expanded="true" />
-            <element signature="e#1056#1057#0" expanded="true" />
-            <element signature="e#1115#1116#0" expanded="true" />
-            <element signature="e#1321#1322#0" expanded="true" />
-            <element signature="e#1359#1360#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiEdge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="900">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1126#1127#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
-            <element signature="e#1199#1200#0" expanded="true" />
-            <element signature="e#1252#1253#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiVertexIterable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1320">
-          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2378#2379#0" expanded="true" />
-            <element signature="e#2426#2427#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1205,61 +1169,38 @@
           <caret line="68" column="63" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2415#2416#0" expanded="true" />
-            <element signature="e#2463#2464#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiVertexIterable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="1290">
+          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="301" max-vertical-offset="900">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1378" max-vertical-offset="2295">
-          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.48267326" vertical-offset="315" max-vertical-offset="2220">
+          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
           <folding>
-            <element signature="e#1114#1115#0" expanded="true" />
-            <element signature="e#1145#1146#0" expanded="true" />
-            <element signature="e#2942#2943#0" expanded="true" />
-            <element signature="e#2969#2970#0" expanded="true" />
-            <element signature="e#4525#4526#0" expanded="true" />
-            <element signature="e#4552#4553#0" expanded="true" />
-            <element signature="e#4584#4585#0" expanded="true" />
-            <element signature="e#4634#4635#0" expanded="true" />
-            <element signature="e#4669#4670#0" expanded="true" />
-            <element signature="e#4704#4705#0" expanded="true" />
+            <element signature="e#1261#1262#0" expanded="true" />
+            <element signature="e#1292#1293#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiVertex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4020">
-          <caret line="218" column="0" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
-          <folding>
-            <element signature="e#2111#2112#0" expanded="true" />
-            <element signature="e#2166#2167#0" expanded="true" />
-            <element signature="e#3205#3206#0" expanded="true" />
-            <element signature="e#3256#3257#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/TinkerTestSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="931" max-vertical-offset="1500">
-          <caret line="70" column="35" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2717#2718#0" expanded="true" />
-            <element signature="e#2755#2756#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5641593" vertical-offset="3030" max-vertical-offset="8490">
-          <caret line="228" column="0" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

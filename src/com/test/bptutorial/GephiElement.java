@@ -6,6 +6,9 @@ package com.test.bptutorial;
 
 import com.tinkerpop.blueprints.Edge;
 import com.tinkerpop.blueprints.Vertex;
+import com.tinkerpop.blueprints.util.ElementHelper;
+import org.gephi.attribute.api.AttributeModel;
+import org.gephi.attribute.api.Table;
 import org.gephi.graph.api.Element;
 
 import java.util.*;
@@ -14,6 +17,8 @@ abstract class GephiElement implements com.tinkerpop.blueprints.Element {
 
     protected final GephiGraph graph;
     protected Element element;
+    //protected Table table;
+    //protected AttributeModel atr;
 
     public GephiElement(GephiGraph graph){
         this.graph = graph;
@@ -36,7 +41,13 @@ abstract class GephiElement implements com.tinkerpop.blueprints.Element {
         return this.element.getAttributeKeys();
     }
     public void setProperty(String key,Object value){
-        this.element.setAttribute(key,value);
+
+        ElementHelper.validateProperty(this, key, value);
+        //this.table.addColumn(key,value.getClass());
+        //this.atr.getNodeTable().addColumn(key,value.getClass());
+
+        this.element.setAttribute(key , value);
+
     }
     public <T> T removeProperty(String key){
        return (T) this.element.removeAttribute(key);

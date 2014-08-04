@@ -30,6 +30,9 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph{
         FEATURES.ignoresSuppliedIds = true;
         FEATURES.supportsVertexIteration = true;
         FEATURES.supportsEdgeIteration = true;
+        FEATURES.supportsVertexProperties = true;
+        FEATURES.supportsStringProperty = true;
+        FEATURES.supportsIntegerProperty = true;
     }
 
     public GephiGraph(Graph graphDb, GraphFactory graphFactory){
