@@ -63,10 +63,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GephiElement.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GephiElement.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.970297" vertical-offset="0" max-vertical-offset="1560">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1560">
               <caret line="84" column="41" selection-start-line="84" selection-start-column="41" selection-end-line="84" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -80,7 +80,7 @@
       <file leaf-file-name="GephiVertex.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiVertex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="3960">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1169" max-vertical-offset="3960">
               <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
               <folding />
             </state>
@@ -90,7 +90,7 @@
       <file leaf-file-name="GephiEdge.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiEdge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
+            <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="900">
               <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -102,8 +102,8 @@
       <file leaf-file-name="GephiVertexIterable.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiVertexIterable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="271" max-vertical-offset="1290">
-              <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="331" max-vertical-offset="1365">
+              <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,21 +111,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VertexTestSuite.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java">
+      <file leaf-file-name="GephiGraph.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="5353" max-vertical-offset="8490">
-              <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1425" max-vertical-offset="2265">
+              <caret line="102" column="70" selection-start-line="102" selection-start-column="70" selection-end-line="102" selection-end-column="70" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GephiGraph.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiGraph.java">
+      <file leaf-file-name="VertexTestSuite.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="945" max-vertical-offset="2265">
-              <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+            <state vertical-scroll-proportion="-4.5420356" vertical-offset="7543" max-vertical-offset="8490">
+              <caret line="375" column="22" selection-start-line="375" selection-start-column="22" selection-end-line="375" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -165,7 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiVertexIterable.java" />
         <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiEdgeIterable.java" />
         <option value="$PROJECT_DIR$/src/com/test/bptutorial/TinkerTestSuite.java" />
         <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiGraph.java" />
@@ -173,6 +172,7 @@
         <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiVertex.java" />
         <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiEdge.java" />
         <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiElement.java" />
+        <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiVertexIterable.java" />
       </list>
     </option>
   </component>
@@ -609,12 +609,12 @@
       <workItem from="1405440564799" duration="60535000" />
       <workItem from="1405748781404" duration="241000" />
       <workItem from="1405749035538" duration="4604000" />
-      <workItem from="1406048908927" duration="167221000" />
+      <workItem from="1406048908927" duration="175891000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232601000" />
+    <option name="totallyTimeSpent" value="241271000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="24" width="1276" height="778" extended-state="6" />
@@ -627,9 +627,9 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3906911" sideWeight="0.61442006" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3906911" sideWeight="0.61442006" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3906911" sideWeight="0.38557994" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32299012" sideWeight="0.43730408" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -640,7 +640,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17946708" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32299012" sideWeight="0.5626959" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32299012" sideWeight="0.5626959" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -697,45 +697,57 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java</url>
-          <line>367</line>
+          <line>384</line>
           <properties />
-          <option name="timeStamp" value="85" />
+          <option name="timeStamp" value="93" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java</url>
-          <line>368</line>
+          <line>385</line>
           <properties />
-          <option name="timeStamp" value="86" />
+          <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java</url>
-          <line>374</line>
+          <line>386</line>
           <properties />
-          <option name="timeStamp" value="89" />
+          <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java</url>
-          <line>373</line>
+          <line>387</line>
           <properties />
-          <option name="timeStamp" value="90" />
+          <option name="timeStamp" value="96" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java</url>
-          <line>375</line>
+          <line>388</line>
           <properties />
-          <option name="timeStamp" value="91" />
+          <option name="timeStamp" value="97" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java</url>
-          <line>377</line>
+          <line>389</line>
           <properties />
-          <option name="timeStamp" value="92" />
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java</url>
+          <line>390</line>
+          <properties />
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java</url>
+          <line>391</line>
+          <properties />
+          <option name="timeStamp" value="100" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="93" />
+      <option name="time" value="101" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -743,16 +755,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiEdgeIterable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="945">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiEdge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="690">
@@ -965,14 +967,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Desktop/graphstore-0.1-20140621.130016-87-jar.jar!/org/gephi/graph/store/GraphStore.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.88" vertical-offset="403" max-vertical-offset="3600">
-          <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Downloads/junit-4.11.jar!/org/junit/runner/notification/RunNotifier.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="223" max-vertical-offset="780">
@@ -1139,6 +1133,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/Desktop/graphstore-0.1-20140621.130016-87-jar.jar!/org/gephi/graph/store/GraphStore.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35519126" vertical-offset="2855" max-vertical-offset="3600">
+          <caret line="200" column="0" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1156" max-vertical-offset="1560">
+          <caret line="84" column="41" selection-start-line="84" selection-start-column="41" selection-end-line="84" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#458#466#0" expanded="true" />
+            <element signature="e#1004#1012#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/graphstore-0.1-20140621.130016-87-jar.jar!/org/gephi/graph/api/Graph.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.353562" vertical-offset="376" max-vertical-offset="1665">
+          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiEdge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="900">
@@ -1151,47 +1173,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiVertexIterable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="271" max-vertical-offset="1290">
-          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="331" max-vertical-offset="1365">
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java">
+    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiVertex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5338" max-vertical-offset="8490">
-          <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3059" max-vertical-offset="3960">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="945" max-vertical-offset="2265">
-          <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1200" max-vertical-offset="2265">
+          <caret line="102" column="70" selection-start-line="102" selection-start-column="70" selection-end-line="102" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiVertex.java">
+    <entry file="file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="3960">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+        <state vertical-scroll-proportion="-4.5420356" vertical-offset="7543" max-vertical-offset="8490">
+          <caret line="375" column="22" selection-start-line="375" selection-start-column="22" selection-end-line="375" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.970297" vertical-offset="0" max-vertical-offset="1560">
-          <caret line="84" column="41" selection-start-line="84" selection-start-column="41" selection-end-line="84" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#458#466#0" expanded="true" />
-            <element signature="e#1004#1012#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
