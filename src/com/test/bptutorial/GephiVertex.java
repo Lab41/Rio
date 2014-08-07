@@ -12,10 +12,7 @@ import com.tinkerpop.blueprints.util.StringFactory;
 import org.gephi.graph.api.Node;
 import org.gephi.graph.api.Edge;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
+import java.util.*;
 
 
 public class GephiVertex extends GephiElement implements Vertex {
@@ -90,55 +87,105 @@ public class GephiVertex extends GephiElement implements Vertex {
             this.node = node;
             this.direction = direction;
             labelHashSet = new HashSet<String>();
-            for(String i:labels) labelHashSet.add(i);
+            for(String x : labels) labelHashSet.add(x);
         }
 
         public Iterator<GephiVertex> iterator(){
 
-            final Iterator<Node> itIn = graph.getGraphStore().getNeighbors(node).iterator();
-            final Iterator<Node> itOut = graph.getGraphStore().getNeighbors(node).iterator();
+            //TODO Cut this down to two iterators
+            final Iterator<Node> itIn = graph.getGraphModel().getDirectedGraph().getPredecessors(node).iterator();
+            final Iterator<Node> itOut = graph.getGraphModel().getDirectedGraph().getSuccessors(node).iterator();
+            final Iterator<Edge> itEdgeIn = graph.getGraphModel().getDirectedGraph().getInEdges(node).iterator();
+            final Iterator<Edge> itEdgeOut = graph.getGraphModel().getDirectedGraph().getOutEdges(node).iterator();
 
             return new Iterator<GephiVertex>() {
+                Edge nextEdge = null;
                 @Override
                 public boolean hasNext() {
+
+                    if(labelHashSet.size() == 0){
+                        if(direction.equals("IN")){
+                            return itIn.hasNext();
+                        }
+                        else if(direction.equals("OUT")){
+                            return itOut.hasNext();
+                        }
+                    }
+
+                    if (nextEdge != null) {
+                        return true;
+                    }
+
+
+                    //Search for the next thing
                     if (direction.equals("IN")) {
-                        while(itIn.hasNext()){
-                            if (labelHashSet.contains(itIn.next().getLabel())) {
-                                return true;
-                            }
+                        while (itEdgeIn.hasNext()) {
+                            Edge temp = itEdgeIn.next();
+                                if (labelHashSet.contains(temp.getTypeLabel())) {
+                                    nextEdge = temp;
+                                    return true;
+                                }
                         }
-                    }
 
-                    else if(direction.equals("OUT")){
-                        while(itOut.hasNext()) {
-                            if (labelHashSet.contains(itOut.next().getLabel())) {
-                                return true;
-                            }
+                    } else {
+                        while (itEdgeOut.hasNext()) {
+
+                            Edge temp = itEdgeOut.next();
+                                if (labelHashSet.contains(temp.getTypeLabel())) {
+                                    nextEdge = temp;
+                                    return true;
+                                }
                         }
-                    }
 
+                    }
                     return false;
+
                 }
 
                 @Override
                 public GephiVertex next() {
+                    if(labelHashSet.size() == 0){
+                        if(direction.equals("IN")){
+                            return new GephiVertex(itIn.next(),graph);
+                        }
+                        else if(direction.equals("OUT")){
+                            return new GephiVertex(itOut.next(),graph);
+                        }
+                    }
+
+                    if(nextEdge != null){
+                        Edge temp = nextEdge;
+                        nextEdge = null;
+
+                        //TODO Rethink this case
+                        if(temp.getSource().equals(node)) {
+                            return new GephiVertex(temp.getTarget(), graph);
+                        }
+                        else{
+                            return new GephiVertex(temp.getSource(), graph);
+                        }
+                    }
+
+                    //Search for the next thing
                     if (direction.equals("IN")) {
-                        while(itIn.hasNext()){
-                            if (labelHashSet.contains(itIn.next().getLabel())) {
-                                return new GephiVertex(itIn.next(),graph);
-                            }
+                        while (itEdgeIn.hasNext()) {
+                            Edge temp = itEdgeIn.next();
+                                if (labelHashSet.contains(temp.getTypeLabel())) {
+                                    return new GephiVertex(temp.getSource(), graph);
+                                }
                         }
+
+                    } else {
+                        while (itEdgeOut.hasNext()) {
+                            Edge temp = itEdgeOut.next();
+                                if (labelHashSet.contains(temp.getTypeLabel())) {
+                                    return new GephiVertex(temp.getTarget(), graph);
+                                }
+                        }
+
                     }
 
-                    else if(direction.equals("OUT")){
-                        while(itOut.hasNext()) {
-                            if (labelHashSet.contains(itOut.next().getLabel())) {
-                                return new GephiVertex(itOut.next(),graph);
-                            }
-                        }
-                    }
-
-                    return new GephiVertex(null,graph);
+                    throw new NoSuchElementException();
 
 
                 }
@@ -147,9 +194,11 @@ public class GephiVertex extends GephiElement implements Vertex {
                 public void remove() {
                     if (direction.equals("IN")){
                         itIn.remove();
+                        itEdgeIn.remove();
                     }
                     else if(direction.equals("OUT")){
                         itOut.remove();
+                        itEdgeOut.remove();
                     }
                 }
             };
@@ -176,14 +225,27 @@ public class GephiVertex extends GephiElement implements Vertex {
 
         public Iterator<GephiEdge> iterator(){
 
-            final Iterator<Edge> itIn = graph.getGraphStore().getEdges(node).iterator();
-            final Iterator<Edge> itOut = graph.getGraphStore().getEdges(node).iterator();
+
+
+            final Iterator<Edge> itIn = graph.getGraphModel().getDirectedGraph().getInEdges(node).iterator();
+
+            final Iterator<Edge> itOut = graph.getGraphModel().getDirectedGraph().getOutEdges(node).iterator();
 
             return new Iterator<GephiEdge>() {
 
                 Edge nextEdge = null;
                 @Override
                 public boolean hasNext() {
+
+
+                    if(labelHashSet.size() == 0){
+                        if(direction.equals("IN")){
+                            return itIn.hasNext();
+                        }
+                        else if(direction.equals("OUT")){
+                            return itOut.hasNext();
+                        }
+                    }
 
                     if (nextEdge != null) {
                         return true;
@@ -193,24 +255,29 @@ public class GephiVertex extends GephiElement implements Vertex {
                     //Search for the next thing
                     if (direction.equals("IN")) {
                         while (itIn.hasNext()) {
+
                             Edge temp = itIn.next();
-                            if (temp.getTarget().equals(node)) {
-                                if (labelHashSet.contains(temp.getLabel())) {
-                                    nextEdge = temp;
-                                    return true;
-                                }
+
+                            if (labelHashSet.contains(temp.getTypeLabel())) {
+                                nextEdge = temp;
+                                return true;
                             }
+
                         }
+
 
                     } else {
                         while (itOut.hasNext()) {
-                            Edge temp = itOut.next();
-                            if (temp.getSource().equals(node)) {
-                                if (labelHashSet.contains(temp.getLabel())) {
-                                    nextEdge = temp;
-                                    return true;
-                                }
-                            }
+
+                                Edge temp = itOut.next();
+
+                                    if (labelHashSet.contains(temp.getTypeLabel())) {
+                                        nextEdge = temp;
+                                        return true;
+                                    }
+
+
+
                         }
 
                     }
@@ -219,6 +286,17 @@ public class GephiVertex extends GephiElement implements Vertex {
 
                 @Override
                 public GephiEdge next() {
+
+                    if(labelHashSet.size() == 0){
+                        if(direction.equals("IN")){
+                            return new GephiEdge(itIn.next(),graph);
+                        }
+                        else if(direction.equals("OUT")){
+                            return new GephiEdge(itOut.next(),graph);
+                        }
+                    }
+
+
 
                     if(nextEdge != null){
                         Edge temp = nextEdge;
@@ -230,23 +308,26 @@ public class GephiVertex extends GephiElement implements Vertex {
                     if (direction.equals("IN")) {
                         while (itIn.hasNext()) {
                             Edge temp = itIn.next();
-                            if (temp.getTarget().equals(node)) {
-                                if (labelHashSet.contains(temp.getLabel())) {
 
-                                    return new GephiEdge(temp,graph);
-                                }
-                            }
+
+                                    if (labelHashSet.contains(temp.getTypeLabel())) {
+                                        return new GephiEdge(temp, graph);
+                                    }
+
+
+
                         }
 
                     } else {
                         while (itOut.hasNext()) {
                             Edge temp = itOut.next();
-                            if (temp.getSource().equals(node)) {
-                                if (labelHashSet.contains(temp.getLabel())) {
 
-                                    return new GephiEdge(temp, graph);
-                                }
-                            }
+
+                                    if (labelHashSet.contains(temp.getTypeLabel())) {
+                                        return new GephiEdge(temp, graph);
+                                    }
+
+
                         }
 
                     }

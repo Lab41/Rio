@@ -12,6 +12,7 @@ import org.gephi.graph.store.NodeImpl;
 import org.gephi.graph.store.EdgeImpl;
 
 import java.util.Iterator;
+import java.util.UUID;
 
 /**
  * Created by aganesh on 7/15/14.
@@ -54,7 +55,7 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph{
 
         if(id == null)
             //node = new NodeImpl(this.counter);
-            node = this.graphModel.factory().newNode(this.counter);
+            node = this.graphModel.factory().newNode(UUID.randomUUID());
         else
             //node = new NodeImpl(id);
             node = this.graphModel.factory().newNode(id);
@@ -127,12 +128,22 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph{
         }*/
 
         //Edge gsEdge = new EdgeImpl(id,(NodeImpl)source,(NodeImpl)target,0,0,false);
-        Edge gsEdge = this.graphModel.factory().newEdge(source,target,true);
+        Edge gsEdge;
+
+        //if(this.getGraphStore().getEdge(source,target) == null){
+        //    gsEdge = this.graphModel.factory().newEdge(source,target);
+        //}
+        //else{
+        //    gsEdge = this.graphModel.factory().newEdge(source,target,1,true);
+        //}
+
+        gsEdge = this.graphModel.factory().newEdge(source,target,this.graphModel.addEdgeType(label),true);
+
         //gsEdge.setLabel(label);
 
         this.graphModel.getGraph().addEdge(gsEdge);
         GephiEdge gephiEdge = new GephiEdge(gsEdge,this);
-        gephiEdge.setLabel(label);
+        //gephiEdge.setLabel(label);
         return gephiEdge;
     }
     public com.tinkerpop.blueprints.Edge getEdge(Object id){
