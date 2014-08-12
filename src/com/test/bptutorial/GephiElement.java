@@ -11,27 +11,38 @@ import org.gephi.graph.api.Element;
 
 import java.util.*;
 
-public class GephiElement implements com.tinkerpop.blueprints.Element {
+abstract class GephiElement implements com.tinkerpop.blueprints.Element {
 
     protected final GephiGraph graph;
     protected Element element;
     protected ArrayList<String> keyList = new ArrayList<String>();
 
     public GephiElement(GephiGraph graph){
-        this.graph = graph;
-    }
 
-    public GephiElement(GephiGraph graph, org.gephi.graph.api.Edge edge){
         this.graph = graph;
-        this.element = edge;
-    }
-    public GephiElement(GephiGraph graph, org.gephi.graph.api.Node node){
-        this.graph = graph;
-        this.element = node;
+        //this.element.removeAttribute("weight");
     }
 
     public <T> T getProperty(String key){
-        return (T) this.element.getAttribute(key);
+
+        //return (T) this.element.getAttribute(key);
+        if(this instanceof Vertex){
+            if(this.graph.getGraphModel().getNodeTable().hasColumn(key)){
+                return (T)this.element.getAttribute(key);
+            }
+            else{
+                return null;
+            }
+        }
+        else{
+            if(this.graph.getGraphModel().getEdgeTable().hasColumn(key)){
+
+                return (T)this.element.getAttribute(key);
+            }
+            else{
+                return null;
+            }
+        }
     }
 
     public Set<String> getPropertyKeys(){
@@ -101,4 +112,9 @@ public class GephiElement implements com.tinkerpop.blueprints.Element {
     public Object getId(){
         return element.getId();
     }
+
+    public int hashCode(){
+        return this.getId().hashCode();
+    }
+
 }

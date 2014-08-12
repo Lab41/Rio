@@ -12,6 +12,7 @@ import org.gephi.graph.store.NodeImpl;
 import org.gephi.graph.store.EdgeImpl;
 
 import java.util.Iterator;
+import java.util.Random;
 import java.util.UUID;
 
 /**
@@ -19,8 +20,6 @@ import java.util.UUID;
  */
 public class GephiGraph implements com.tinkerpop.blueprints.Graph{
 
-    //private Graph graphDb;
-    //private GraphFactory graphFactory;
     private GraphModel graphModel;
 
     private static final Features FEATURES = new Features();
@@ -33,16 +32,19 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph{
         FEATURES.supportsVertexProperties = true;
         FEATURES.supportsStringProperty = true;
         FEATURES.supportsIntegerProperty = true;
+        FEATURES.supportsEdgeRetrieval = true;
+        FEATURES.supportsDuplicateEdges = false;
+        FEATURES.supportsSelfLoops = true;
+        FEATURES.supportsEdgeProperties = true;
+        FEATURES.supportsDoubleProperty = false;
+
+
     }
 
-    /*public GephiGraph(Graph graphDb, GraphFactory graphFactory){
-        this.graphDb = graphDb;
-        this.graphFactory = graphFactory;
-    }*/
     public GephiGraph(GraphModel graphModel){
         this.graphModel = graphModel;
-    }
 
+    }
 
     public Features getFeatures(){
         return FEATURES;
@@ -50,14 +52,12 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph{
     public Vertex addVertex(Object id){
 
         this.counter++;
-        //Node node = new NodeImpl(id);
         Node node;
 
         if(id == null)
-            //node = new NodeImpl(this.counter);
-            node = this.graphModel.factory().newNode(UUID.randomUUID());
+            //node = this.graphModel.factory().newNode(UUID.randomUUID());
+            node = this.graphModel.factory().newNode(counter);
         else
-            //node = new NodeImpl(id);
             node = this.graphModel.factory().newNode(id);
 
         this.graphModel.getGraph().addNode(node);
@@ -65,7 +65,7 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph{
     }
     public Vertex getVertex(Object id){
         if (id == null) throw ExceptionFactory.vertexIdCanNotBeNull();
-        //return new GephiVertex(new NodeImpl(id),this);
+
         if(this.graphModel.getGraph().getNode(id) != null ){
             return new GephiVertex(this.graphModel.getGraph().getNode(id),this);
         }
@@ -77,20 +77,20 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph{
 
     public void removeVertex(Vertex vertex){
         try {
-            //Node node = new NodeImpl(vertex.getId());
+            this.graphModel.getGraph().readUnlockAll();
             Node node = ((GephiVertex) vertex).getRawVertex();
 
             //Need to remove the edges associated with this vertex
-            //Iterator<Edge> itr = this.graphDb.getEdges().iterator();
+            //Iterator<Edge> itr = this.graphModel.getGraph().getEdges().toCollection().iterator();
+            Iterator<Edge> itrIn = this.graphModel.getDirectedGraph().getInEdges(node).toCollection().iterator();
+            Iterator<Edge> itrOut = this.graphModel.getDirectedGraph().getOutEdges(node).toCollection().iterator();
 
             //TODO: Figure out correcting locking mechanism
-            Edge [] edgeArray = this.graphModel.getGraph().getEdges().toArray();
-
-            /*while(itr.hasNext()){
-                this.graphDb.removeEdge(itr.next());
-            }*/
-            for(Edge x : edgeArray){
-                this.graphModel.getGraph().removeEdge(x);
+            while(itrIn.hasNext()){
+                this.graphModel.getGraph().removeEdge(itrIn.next());
+            }
+            while(itrOut.hasNext()){
+                this.graphModel.getGraph().removeEdge(itrOut.next());
             }
 
             this.graphModel.getGraph().removeNode(node);
@@ -102,11 +102,11 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph{
     }
     public Iterable<Vertex> getVertices(){
         return new GephiVertexIterable(this.graphModel.getGraph().getNodes(),this);
-
     }
 
     public Iterable<Vertex> getVertices(String key, Object value){
-        return null;
+        //throw new UnsupportedOperationException();
+        return new GephiKVVertexIterable(this.graphModel.getGraph().getNodes(),this,key,value);
     }
 
     public com.tinkerpop.blueprints.Edge addEdge(Object id, Vertex outVertex, Vertex inVertex, String label){
@@ -114,51 +114,49 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph{
         if(label == null)
             throw ExceptionFactory.edgeLabelCanNotBeNull();
 
-        //NodeImpl source = new NodeImpl(outVertex.getId());
-        //NodeImpl target = new NodeImpl(inVertex.getId());
-
-        //Node source = ((GephiVertex)inVertex).getRawVertex();
-        //Node target = ((GephiVertex)outVertex).getRawVertex();
-
         Node source = ((GephiVertex)outVertex).getRawVertex();
         Node target = ((GephiVertex)inVertex).getRawVertex();
 
-        /*if(id == null){
-            id = counter;
-        }*/
-
-        //Edge gsEdge = new EdgeImpl(id,(NodeImpl)source,(NodeImpl)target,0,0,false);
         Edge gsEdge;
 
-        //if(this.getGraphStore().getEdge(source,target) == null){
-        //    gsEdge = this.graphModel.factory().newEdge(source,target);
-        //}
-        //else{
-        //    gsEdge = this.graphModel.factory().newEdge(source,target,1,true);
-        //}
-
-        gsEdge = this.graphModel.factory().newEdge(source,target,this.graphModel.addEdgeType(label),true);
-
-        //gsEdge.setLabel(label);
-
+        /*if(id != null) {
+            //gsEdge = this.graphModel.factory().newEdge(source, target, this.graphModel.addEdgeType(label), true);
+            gsEdge = this.graphModel.factory().newEdge(id,source,target,this.graphModel.addEdgeType(label),0,true);
+        }
+        else{
+            //gsEdge = this.graphModel.factory().newEdge(source, target, this.graphModel.addEdgeType(label), true);
+            gsEdge = this.graphModel.factory().newEdge(UUID.randomUUID(),source,target,this.graphModel.addEdgeType(label),0,true);
+        }*/
+        gsEdge = this.graphModel.factory().newEdge(source, target, this.graphModel.addEdgeType(label), true);
+        gsEdge.setAttribute("label",label);
         this.graphModel.getGraph().addEdge(gsEdge);
-        GephiEdge gephiEdge = new GephiEdge(gsEdge,this);
-        //gephiEdge.setLabel(label);
-        return gephiEdge;
+
+
+        return new GephiEdge(gsEdge,this);
     }
     public com.tinkerpop.blueprints.Edge getEdge(Object id){
         if (id == null) throw ExceptionFactory.edgeIdCanNotBeNull();
-        return new GephiEdge(this.graphModel.getGraph().getEdge(id),this);
+        //return new GephiEdge(this.graphModel.getGraph().getEdge(id),this);
+        if(this.graphModel.getGraph().getEdge(id) != null ){
+            return new GephiEdge(this.graphModel.getGraph().getEdge(id),this);
+        }
+        else{
+            return null;
+        }
     }
     public void removeEdge(com.tinkerpop.blueprints.Edge edge){
+        //TODO Figure out if this locking mechanism is correct
+        this.graphModel.getGraph().readUnlockAll();
         this.graphModel.getGraph().removeEdge(this.graphModel.getGraph().getEdge(edge.getId()));
+        //this.graphModel.getGraph().removeEdge( ((GephiEdge)edge).getRawEdge() );
     }
     public Iterable<com.tinkerpop.blueprints.Edge> getEdges(){
         return new GephiEdgeIterable(this.graphModel.getGraph().getEdges(),this);
     }
 
     public Iterable<com.tinkerpop.blueprints.Edge> getEdges(String key, Object value){
-        return null;
+        //throw new UnsupportedOperationException();
+        return new GephiKVEdgeIterable(this.graphModel.getGraph().getEdges(),this,key,value);
     }
 
     public GraphQuery query(){

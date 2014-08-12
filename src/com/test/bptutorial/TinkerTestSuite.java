@@ -19,13 +19,13 @@ public class TinkerTestSuite extends GraphTest {
         printTestPerformance("VertexTestSuite", this.stopWatch());
     }
 
-    /*public void testEdgeTestSuite() throws Exception {
+    public void testEdgeTestSuite() throws Exception {
         this.stopWatch();
         doTestSuite(new EdgeTestSuite(this));
         printTestPerformance("EdgeTestSuite", this.stopWatch());
     }
 
-    public void testGraphTestSuite() throws Exception {
+    /*public void testGraphTestSuite() throws Exception {
         this.stopWatch();
         doTestSuite(new GraphTestSuite(this));
         printTestPerformance("GraphTestSuite", this.stopWatch());

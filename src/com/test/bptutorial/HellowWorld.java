@@ -35,9 +35,9 @@ public class HellowWorld {
         //GephiGraph graph = new GephiGraph(gl);
 
 
-        Node a = gl.factory().newNode();
-        Node b = gl.factory().newNode();
-        Node c = gl.factory().newNode();
+        Node a = gl.factory().newNode("1");
+        Node b = gl.factory().newNode("2");
+        Node c = gl.factory().newNode("3");
 
         org.gephi.graph.api.Graph test = gl.getGraph();
         test.addNode(a);
@@ -45,24 +45,29 @@ public class HellowWorld {
         test.addNode(c);
 
         org.gephi.graph.api.Edge x = gl.factory().newEdge(a,b,gl.addEdgeType("knows"),true);
-        org.gephi.graph.api.Edge y = gl.factory().newEdge(b,c,gl.addEdgeType("knows"),true);
-        org.gephi.graph.api.Edge z = gl.factory().newEdge(a,c,gl.addEdgeType("hates"),true);
+        org.gephi.graph.api.Edge y = gl.factory().newEdge(a,c,gl.addEdgeType("knows"),true);
+        /*org.gephi.graph.api.Edge z = gl.factory().newEdge(a,c,gl.addEdgeType("hates"),true);
         org.gephi.graph.api.Edge q = gl.factory().newEdge(a,b,gl.addEdgeType("hates"),true);
-        org.gephi.graph.api.Edge w = gl.factory().newEdge(c,c,gl.addEdgeType("hates"),true);
+        org.gephi.graph.api.Edge w = gl.factory().newEdge(c,c,gl.addEdgeType("hates"),true);*/
 
         test.addEdge(x);
         test.addEdge(y);
-        test.addEdge(z);
+        /*test.addEdge(z);
         test.addEdge(q);
-        test.addEdge(w);
+        test.addEdge(w);*/
         //System.out.println(q.getTypeLabel());
         //System.out.println(gl.getDirectedGraph().getInEdges(a).toArray().length);
         //System.out.println(gl.getDirectedGraph().getSuccessors(a,q.getType()).toArray().length);
         //System.out.println(gl.getDirectedGraph().getSuccessors(a,gl.getEdgeType("hates")).toArray().length);
 
         //System.out.print(gl.getDirectedGraph().getEdge(a,b).getId());
-        //Iterator<org.gephi.graph.api.Edge> it = gl.getDirectedGraph().getOutEdges(a).iterator();
+        Iterator<org.gephi.graph.api.Edge> it = gl.getDirectedGraph().getOutEdges(a).iterator();
+        //System.out.println(gl.getDirectedGraph().getOutEdges(a).toArray().length);
         //Node tempN = null;
+        //System.out.println(it.next());
+        //while(it.hasNext()){
+            System.out.println(it.next().getTypeLabel());
+        //}
 
         /*while(it.hasNext()){
             temp = it.next().getTarget();
@@ -73,7 +78,8 @@ public class HellowWorld {
         //System.out.print(gl.getGraph().getEdge(a,b,gl.getEdgeType("hates")));
         //System.out.println(gl.getDirectedGraph().getSuccessors(a,gl.getEdgeType("hates")).toArray().length   );
         //System.out.println(gl.getDirectedGraph().getSuccessors(a).toArray().length      );
-        System.out.println(gl.getDirectedGraph().getEdge(a,c,gl.getEdgeType("hates")));
+        //System.out.println(it.hasNext());
+
         /*Vertex a = graph.addVertex(null);
         Vertex b = graph.addVertex(null);
         Vertex c = graph.addVertex(null);

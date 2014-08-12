@@ -5,14 +5,17 @@ package com.test.bptutorial;
  */
 import com.tinkerpop.blueprints.CloseableIterable;
 import org.gephi.graph.api.Edge;
+import org.gephi.graph.api.EdgeIterable;
+
 import java.util.Iterator;
 
 public class GephiEdgeIterable <T extends com.tinkerpop.blueprints.Edge> implements CloseableIterable<GephiEdge> {
 
-    private Iterable<Edge> edges;
+    //private Iterable<Edge> edges;
+    private EdgeIterable edges;
     private GephiGraph graph;
 
-    public GephiEdgeIterable(Iterable<Edge> edges, GephiGraph graph){
+    public GephiEdgeIterable(EdgeIterable edges, GephiGraph graph){
         this.graph = graph;
         this.edges = edges;
     }
@@ -20,17 +23,13 @@ public class GephiEdgeIterable <T extends com.tinkerpop.blueprints.Edge> impleme
     public Iterator<GephiEdge> iterator(){
         return new Iterator<GephiEdge>() {
 
-            private Iterator<Edge> it = edges.iterator();
+            //private Iterator<Edge> it = edges.iterator();
+            private Iterator<Edge> it = edges.toCollection().iterator();
             private Edge nextEdge = null;
 
             @Override
             public boolean hasNext() {
-                /*if (this.it.hasNext()) {
-                    return true;
-                }
-                else{
-                    return false;
-                }*/
+
                 if (null != this.nextEdge)
                     return true;
                 else {
@@ -51,12 +50,6 @@ public class GephiEdgeIterable <T extends com.tinkerpop.blueprints.Edge> impleme
             @Override
             public GephiEdge next() {
 
-                /*if(this.it.next() == null){
-                    return new GephiEdge(null,graph);
-                }
-                else{
-                    return new GephiEdge(this.it.next(),graph);
-                }*/
                 if (null != this.nextEdge) {
                     final Edge temp = this.nextEdge;
                     this.nextEdge = null;

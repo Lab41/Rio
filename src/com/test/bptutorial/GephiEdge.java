@@ -11,18 +11,15 @@ import org.gephi.graph.api.Edge;
  */
 public class GephiEdge extends GephiElement implements com.tinkerpop.blueprints.Edge  {
 
-    //private Edge edge;
-
     public GephiEdge(Edge edge, GephiGraph graph){
-        super(graph,edge);
-        //super(graph);
+        super(graph);
         this.element = edge;
-        //this.edge = edge;
+        //TODO remove this in final cut, removed weight attribute b/c test specifically added weight property
+        this.element.removeAttribute("weight");
     }
 
     public Vertex getVertex(Direction direction) throws IllegalArgumentException{
         if(direction.equals(Direction.OUT)){
-            //return new GephiVertex((this.edge).getSource(),this.graph);
             return new GephiVertex(((Edge) this.element).getSource(),this.graph);
         }
         else if(direction.equals(Direction.IN)){
@@ -41,16 +38,12 @@ public class GephiEdge extends GephiElement implements com.tinkerpop.blueprints.
         return StringFactory.edgeString(this);
     }
 
-    public void setLabel(String str){
-        //this.edge.setLabel(str);
-        ((Edge)this.element).setLabel(str);
-    }
-
     public String getLabel(){
-        //return this.edge.getLabel();
-        return ((Edge)this.element).getLabel();
+        //return ((Edge)this.element).getLabel();
+        return ((Edge)this.element).getTypeLabel().toString();
     }
 
+    @Override
     public boolean equals(final Object object) {
         return object instanceof GephiEdge && ((GephiEdge) object).getId().equals(this.getId());
     }

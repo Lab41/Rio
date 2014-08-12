@@ -63,22 +63,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="VertexTestSuite.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java">
+      <file leaf-file-name="GephiGraph.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="6961" max-vertical-offset="8490">
-              <caret line="401" column="0" selection-start-line="401" selection-start-column="0" selection-end-line="401" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TinkerTestSuite.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/TinkerTestSuite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19911504" vertical-offset="45" max-vertical-offset="1365">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-              <folding />
+            <state vertical-scroll-proportion="0.7300885" vertical-offset="75" max-vertical-offset="2550">
+              <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+              <folding>
+                <element signature="e#5899#5900#0" expanded="true" />
+                <element signature="e#5949#5950#0" expanded="true" />
+                <element signature="e#5984#5985#0" expanded="true" />
+                <element signature="e#6033#6034#0" expanded="true" />
+                <element signature="e#6073#6074#0" expanded="true" />
+                <element signature="e#6111#6112#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,33 +83,63 @@
       <file leaf-file-name="GephiVertex.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiVertex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5220">
-              <caret line="159" column="48" selection-start-line="159" selection-start-column="48" selection-end-line="159" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GephiGraph.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiGraph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1245" max-vertical-offset="2445">
-              <caret line="145" column="36" selection-start-line="145" selection-start-column="36" selection-end-line="145" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4346" max-vertical-offset="5160">
+              <caret line="328" column="35" selection-start-line="328" selection-start-column="35" selection-end-line="328" selection-end-column="35" />
               <folding>
-                <element signature="e#5480#5481#0" expanded="true" />
-                <element signature="e#5518#5519#0" expanded="true" />
+                <element signature="e#1460#1461#0" expanded="true" />
+                <element signature="e#1501#1502#0" expanded="true" />
+                <element signature="e#2250#2251#0" expanded="true" />
+                <element signature="e#2301#2302#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HellowWorld.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/HellowWorld.java">
+      <file leaf-file-name="EdgeTestSuite.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="826" max-vertical-offset="1485">
-              <caret line="75" column="84" selection-start-line="75" selection-start-column="84" selection-end-line="75" selection-end-column="84" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="7711" max-vertical-offset="10260">
+              <caret line="526" column="12" selection-start-line="526" selection-start-column="12" selection-end-line="526" selection-end-column="12" />
+              <folding>
+                <element signature="e#1272#1278#0" expanded="true" />
+                <element signature="e#8567#8573#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TinkerTestSuite.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/TinkerTestSuite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
+              <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GephiEdge.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiEdge.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+              <caret line="16" column="109" selection-start-line="16" selection-start-column="109" selection-end-line="16" selection-end-column="109" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GephiElement.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiElement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="406" max-vertical-offset="1785">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding>
+                <element signature="e#460#468#0" expanded="true" />
+                <element signature="e#1270#1278#0" expanded="true" />
+                <element signature="e#3211#3212#0" expanded="true" />
+                <element signature="e#3257#3258#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,15 +155,18 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiEdgeIterable.java" />
-        <option value="$PROJECT_DIR$/src/com/test/bptutorial/TinkerTestSuite.java" />
-        <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiEdge.java" />
-        <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiElement.java" />
-        <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiVertexIterable.java" />
         <option value="$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java" />
-        <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiGraph.java" />
+        <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiEdgeIterable.java" />
+        <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiVertexIterable.java" />
+        <option value="$PROJECT_DIR$/src/com/test/bptutorial/TinkerTestSuite.java" />
         <option value="$PROJECT_DIR$/src/com/test/bptutorial/HellowWorld.java" />
         <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiVertex.java" />
+        <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiKVEdgeIterable.java" />
+        <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiKVVertexIterable.java" />
+        <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiElement.java" />
+        <option value="$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java" />
+        <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiEdge.java" />
+        <option value="$PROJECT_DIR$/src/com/test/bptutorial/GephiGraph.java" />
       </list>
     </option>
   </component>
@@ -241,7 +271,7 @@
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="FullScreen" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.TinkerTestSuite.testVertexTestSuite">
+  <component name="RunManager" selected="JUnit.TinkerTestSuite">
     <configuration default="false" name="TinkerTestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -289,6 +319,40 @@
       <option name="PACKAGE_NAME" value="com.test.bptutorial" />
       <option name="MAIN_CLASS_NAME" value="com.test.bptutorial.TinkerTestSuite" />
       <option name="METHOD_NAME" value="testVertexTestSuite" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TinkerTestSuite.testEdgeTestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.test.bptutorial.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="gephiProject" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.test.bptutorial" />
+      <option name="MAIN_CLASS_NAME" value="com.test.bptutorial.TinkerTestSuite" />
+      <option name="METHOD_NAME" value="testEdgeTestSuite" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -551,15 +615,17 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.HellowWorld" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.TinkerTestSuite" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.TinkerTestSuite.testVertexTestSuite" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TinkerTestSuite.testEdgeTestSuite" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TinkerTestSuite.testVertexTestSuite" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TinkerTestSuite" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TinkerTestSuite" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TinkerTestSuite.testEdgeTestSuite" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TinkerTestSuite.testVertexTestSuite" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -579,15 +645,15 @@
       <workItem from="1405440564799" duration="60535000" />
       <workItem from="1405748781404" duration="241000" />
       <workItem from="1405749035538" duration="4604000" />
-      <workItem from="1406048908927" duration="223678000" />
+      <workItem from="1406048908927" duration="256673000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="289058000" />
+    <option name="totallyTimeSpent" value="322053000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="22" width="1276" height="778" extended-state="0" />
+    <frame x="4" y="22" width="1276" height="778" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -610,7 +676,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17946708" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32299012" sideWeight="0.5626959" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32299012" sideWeight="0.5626959" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -666,52 +732,142 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java</url>
-          <line>396</line>
+          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java</url>
+          <line>520</line>
           <properties />
-          <option name="timeStamp" value="105" />
+          <option name="timeStamp" value="206" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java</url>
-          <line>397</line>
+          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java</url>
+          <line>521</line>
           <properties />
-          <option name="timeStamp" value="106" />
+          <option name="timeStamp" value="207" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java</url>
-          <line>398</line>
+          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java</url>
+          <line>522</line>
           <properties />
-          <option name="timeStamp" value="107" />
+          <option name="timeStamp" value="208" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java</url>
-          <line>401</line>
+          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java</url>
+          <line>523</line>
           <properties />
-          <option name="timeStamp" value="109" />
+          <option name="timeStamp" value="209" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java</url>
-          <line>399</line>
+          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java</url>
+          <line>524</line>
           <properties />
-          <option name="timeStamp" value="110" />
+          <option name="timeStamp" value="210" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java</url>
-          <line>400</line>
+          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java</url>
+          <line>525</line>
           <properties />
-          <option name="timeStamp" value="111" />
+          <option name="timeStamp" value="211" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/test/bptutorial/HellowWorld.java</url>
-          <line>75</line>
+          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java</url>
+          <line>526</line>
           <properties />
-          <option name="timeStamp" value="115" />
+          <option name="timeStamp" value="212" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java</url>
+          <line>528</line>
+          <properties />
+          <option name="timeStamp" value="213" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java</url>
+          <line>530</line>
+          <properties />
+          <option name="timeStamp" value="214" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java</url>
+          <line>529</line>
+          <properties />
+          <option name="timeStamp" value="215" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java</url>
+          <line>531</line>
+          <properties />
+          <option name="timeStamp" value="216" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java</url>
+          <line>533</line>
+          <properties />
+          <option name="timeStamp" value="217" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java</url>
+          <line>534</line>
+          <properties />
+          <option name="timeStamp" value="218" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java</url>
+          <line>535</line>
+          <properties />
+          <option name="timeStamp" value="219" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java</url>
+          <line>536</line>
+          <properties />
+          <option name="timeStamp" value="220" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java</url>
+          <line>538</line>
+          <properties />
+          <option name="timeStamp" value="221" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java</url>
+          <line>537</line>
+          <properties />
+          <option name="timeStamp" value="222" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java</url>
+          <line>541</line>
+          <properties />
+          <option name="timeStamp" value="223" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java</url>
+          <line>542</line>
+          <properties />
+          <option name="timeStamp" value="224" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java</url>
+          <line>543</line>
+          <properties />
+          <option name="timeStamp" value="225" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java</url>
+          <line>544</line>
+          <properties />
+          <option name="timeStamp" value="226" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java</url>
+          <line>547</line>
+          <properties />
+          <option name="timeStamp" value="227" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="116" />
+      <option name="time" value="228" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -719,36 +875,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="660">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding>
-            <element signature="e#1004#1012#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiVertex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="915">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="1440">
-          <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
-          <folding>
-            <element signature="e#5391#5392#0" expanded="false" />
-            <element signature="e#5440#5441#0" expanded="false" />
-            <element signature="e#5518#5519#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiVertexIterable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="512" max-vertical-offset="975">
@@ -901,16 +1027,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiEdgeIterable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
-          <caret line="67" column="62" selection-start-line="67" selection-start-column="62" selection-end-line="67" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Desktop/graphstore-0.1-20140621.130016-87-jar.jar!/org/gephi/graph/store/TextPropertiesImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.36" vertical-offset="31" max-vertical-offset="840">
@@ -959,41 +1075,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiEdge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="166" max-vertical-offset="900">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiVertexIterable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1138614" vertical-offset="0" max-vertical-offset="1365">
-          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Desktop/graphstore-0.1-20140621.130016-87-jar.jar!/org/gephi/graph/store/EdgeImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2115">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="211" max-vertical-offset="1485">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#458#466#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1031,14 +1117,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Desktop/graphstore-0.1-20140621.130016-87-jar.jar!/org/gephi/graph/store/GraphModelImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.2" vertical-offset="200" max-vertical-offset="1605">
-          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Desktop/fastutil-6.5.15.jar!/it/unimi/dsi/fastutil/HashCommon.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.16" vertical-offset="151" max-vertical-offset="555">
@@ -1055,10 +1133,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Desktop/graphstore-0.1-20140621.130016-87-jar.jar!/org/gephi/graph/store/EdgeStore.class">
+    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiVertexIterable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.88" vertical-offset="1408" max-vertical-offset="5790">
-          <caret line="103" column="42" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1185">
+          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33168316" vertical-offset="5671" max-vertical-offset="8490">
+          <caret line="396" column="0" selection-start-line="396" selection-start-column="0" selection-end-line="396" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/junit-4.11.jar!/org/junit/runner/notification/Failure.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.353562" vertical-offset="16" max-vertical-offset="435">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/junit-4.11.jar!/org/junit/runner/Description.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="238" max-vertical-offset="1125">
+          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/graphstore-0.1-20140621.130016-87-jar.jar!/org/gephi/graph/store/GraphModelImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.88" vertical-offset="208" max-vertical-offset="1605">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -1073,49 +1183,72 @@
     </entry>
     <entry file="jar://$USER_HOME$/Desktop/graphstore-0.1-20140621.130016-87-jar.jar!/org/gephi/graph/store/GraphStore.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.88" vertical-offset="853" max-vertical-offset="3600">
-          <caret line="66" column="36" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/HellowWorld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="826" max-vertical-offset="1485">
-          <caret line="75" column="84" selection-start-line="75" selection-start-column="84" selection-end-line="75" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Downloads/junit-4.11.jar!/org/junit/runner/Description.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.88" vertical-offset="238" max-vertical-offset="1125">
-          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+        <state vertical-scroll-proportion="-4.88" vertical-offset="3013" max-vertical-offset="3600">
+          <caret line="210" column="60" selection-start-line="210" selection-start-column="60" selection-end-line="210" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/Downloads/junit-4.11.jar!/org/junit/internal/runners/JUnit38ClassRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.04" vertical-offset="459" max-vertical-offset="825">
-          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.59016395" vertical-offset="459" max-vertical-offset="825">
+          <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Downloads/junit-4.11.jar!/org/junit/runner/notification/Failure.class">
+    <entry file="jar://$USER_HOME$/Desktop/graphstore-0.1-20140621.130016-87-jar.jar!/org/gephi/graph/store/EdgeStore.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.36" vertical-offset="16" max-vertical-offset="435">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.35519126" vertical-offset="4415" max-vertical-offset="5790">
+          <caret line="304" column="46" selection-start-line="304" selection-start-column="46" selection-end-line="304" selection-end-column="46" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/HellowWorld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48762375" vertical-offset="508" max-vertical-offset="1575">
+          <caret line="47" column="92" selection-start-line="47" selection-start-column="92" selection-end-line="47" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiEdgeIterable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0331858" vertical-offset="553" max-vertical-offset="1200">
+          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiKVEdgeIterable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3318584" vertical-offset="0" max-vertical-offset="1170">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding>
+            <element signature="e#1927#1928#0" expanded="true" />
+            <element signature="e#1970#1971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiKVVertexIterable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.5597346" vertical-offset="73" max-vertical-offset="1320">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2192#2193#0" expanded="true" />
+            <element signature="e#2243#2244#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/impls/GraphTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6658416" vertical-offset="61" max-vertical-offset="465">
+        <state vertical-scroll-proportion="0.70132744" vertical-offset="13" max-vertical-offset="465">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="e#707#708#0" expanded="true" />
@@ -1123,38 +1256,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/VertexTestSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="8086" max-vertical-offset="8490">
-          <caret line="401" column="0" selection-start-line="401" selection-start-column="0" selection-end-line="401" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiVertex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5220">
-          <caret line="159" column="48" selection-start-line="159" selection-start-column="48" selection-end-line="159" selection-end-column="48" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="4526" max-vertical-offset="5160">
+          <caret line="328" column="35" selection-start-line="328" selection-start-column="35" selection-end-line="328" selection-end-column="35" />
+          <folding>
+            <element signature="e#1460#1461#0" expanded="true" />
+            <element signature="e#1501#1502#0" expanded="true" />
+            <element signature="e#2250#2251#0" expanded="true" />
+            <element signature="e#2301#2302#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiGraph.java">
+    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiEdge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1245" max-vertical-offset="2445">
-          <caret line="145" column="36" selection-start-line="145" selection-start-column="36" selection-end-line="145" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+          <caret line="16" column="109" selection-start-line="16" selection-start-column="109" selection-end-line="16" selection-end-column="109" />
           <folding>
-            <element signature="e#5480#5481#0" expanded="true" />
-            <element signature="e#5518#5519#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/TinkerTestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19911504" vertical-offset="45" max-vertical-offset="1365">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/PublicLab41/blueprints/blueprints-test/src/main/java/com/tinkerpop/blueprints/EdgeTestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7621" max-vertical-offset="10260">
+          <caret line="526" column="12" selection-start-line="526" selection-start-column="12" selection-end-line="526" selection-end-column="12" />
+          <folding>
+            <element signature="e#1272#1278#0" expanded="true" />
+            <element signature="e#8567#8573#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="181" max-vertical-offset="1785">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <element signature="e#460#468#0" expanded="true" />
+            <element signature="e#1270#1278#0" expanded="true" />
+            <element signature="e#3211#3212#0" expanded="true" />
+            <element signature="e#3257#3258#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test/bptutorial/GephiGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7300885" vertical-offset="75" max-vertical-offset="2550">
+          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+          <folding>
+            <element signature="e#5899#5900#0" expanded="true" />
+            <element signature="e#5949#5950#0" expanded="true" />
+            <element signature="e#5984#5985#0" expanded="true" />
+            <element signature="e#6033#6034#0" expanded="true" />
+            <element signature="e#6073#6074#0" expanded="true" />
+            <element signature="e#6111#6112#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

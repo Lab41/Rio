@@ -28,12 +28,7 @@ public class GephiVertexIterable<T extends Vertex> implements CloseableIterable<
 
             //private Iterator<Node> it = nodes.iterator();
 
-            //private Node[] nodesArr = nodes.toArray();
-            //ArrayList<Node> nodeList = new ArrayList<Node>();
-            //private Collection<Node> nodeCollection = nodes.toCollection();
             private Iterator<Node> it = nodes.toCollection().iterator();
-
-
             private Node nextNode = null;
 
             @Override
