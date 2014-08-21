@@ -60,6 +60,7 @@ public class GephiVertex extends GephiElement implements Vertex {
     public VertexQuery query(){
         return new DefaultVertexQuery(this);
     }
+
     public com.tinkerpop.blueprints.Edge addEdge(String label, Vertex inVertex){
         return this.graph.addEdge(null,this,inVertex,label);
     }
@@ -81,10 +82,10 @@ public class GephiVertex extends GephiElement implements Vertex {
         public Iterator<GephiVertex> iterator(){
 
             //TODO Cut this down to two iterators
-            final Iterator<Node> itIn = graph.getGraphModel().getDirectedGraph().getPredecessors(node).iterator();
-            final Iterator<Node> itOut = graph.getGraphModel().getDirectedGraph().getSuccessors(node).iterator();
-            final Iterator<Edge> itEdgeIn = graph.getGraphModel().getDirectedGraph().getInEdges(node).iterator();
-            final Iterator<Edge> itEdgeOut = graph.getGraphModel().getDirectedGraph().getOutEdges(node).iterator();
+            final Iterator<Node> itIn = graph.getGraphModel().getDirectedGraph().getPredecessors(node).toCollection().iterator();
+            final Iterator<Node> itOut = graph.getGraphModel().getDirectedGraph().getSuccessors(node).toCollection().iterator();
+            final Iterator<Edge> itEdgeIn = graph.getGraphModel().getDirectedGraph().getInEdges(node).toCollection().iterator();
+            final Iterator<Edge> itEdgeOut = graph.getGraphModel().getDirectedGraph().getOutEdges(node).toCollection().iterator();
 
             return new Iterator<GephiVertex>() {
                 Edge nextEdge = null;
@@ -222,8 +223,8 @@ public class GephiVertex extends GephiElement implements Vertex {
 
         public Iterator<GephiEdge> iterator(){
 
-            final Iterator<Edge> itIn = graph.getGraphModel().getDirectedGraph().getInEdges(node).iterator();
-            final Iterator<Edge> itOut = graph.getGraphModel().getDirectedGraph().getOutEdges(node).iterator();
+            final Iterator<Edge> itIn = graph.getGraphModel().getDirectedGraph().getInEdges(node).toCollection().iterator();
+            final Iterator<Edge> itOut = graph.getGraphModel().getDirectedGraph().getOutEdges(node).toCollection().iterator();
 
             return new Iterator<GephiEdge>() {
 
@@ -277,19 +278,19 @@ public class GephiVertex extends GephiElement implements Vertex {
                 @Override
                 public GephiEdge next() {
 
-                    //Edge finalEdge = null;
+
 
                     if(labelHashSet.size() == 0){
                         if(direction.equals("IN")){
                             while(itIn.hasNext()) {
                                 return new GephiEdge(itIn.next(), graph);
-                                //finalEdge = itIn.next();
+
                             }
                         }
                         else if(direction.equals("OUT")){
                             while(itOut.hasNext()) {
                                 return new GephiEdge(itOut.next(), graph);
-                                //finalEdge = itOut.next();
+
                             }
                         }
                     }
@@ -298,7 +299,7 @@ public class GephiVertex extends GephiElement implements Vertex {
                         Edge temp = nextEdge;
                         nextEdge = null;
                         return new GephiEdge(temp,graph);
-                        //finalEdge = temp;
+
                     }
 
                     //Search for the next thing
@@ -307,7 +308,7 @@ public class GephiVertex extends GephiElement implements Vertex {
                             Edge temp = itIn.next();
                                     if (labelHashSet.contains(temp.getTypeLabel())) {
                                         return new GephiEdge(temp, graph);
-                                        //finalEdge = temp;
+
                                     }
                         }
 
@@ -316,17 +317,14 @@ public class GephiVertex extends GephiElement implements Vertex {
                             Edge temp = itOut.next();
                                     if (labelHashSet.contains(temp.getTypeLabel())) {
                                         return new GephiEdge(temp, graph);
-                                        //finalEdge = temp;
+
                                     }
                         }
 
                     }
 
                     throw new NoSuchElementException();
-                    /*if(finalEdge == null){
-                        throw new NoSuchElementException();
-                    }
-                    return new GephiEdge(finalEdge,graph);*/
+
 
                 }
 

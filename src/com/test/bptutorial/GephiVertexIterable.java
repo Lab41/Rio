@@ -14,7 +14,6 @@ import java.util.Iterator;
  */
 public class GephiVertexIterable<T extends Vertex> implements CloseableIterable<GephiVertex> {
 
-    //private Iterable<Node> nodes;
     private NodeIterable nodes;
     private GephiGraph graph;
 
@@ -26,7 +25,6 @@ public class GephiVertexIterable<T extends Vertex> implements CloseableIterable<
     public Iterator<GephiVertex> iterator(){
         return new Iterator<GephiVertex>() {
 
-            //private Iterator<Node> it = nodes.iterator();
 
             private Iterator<Node> it = nodes.toCollection().iterator();
             private Node nextNode = null;
@@ -62,7 +60,7 @@ public class GephiVertexIterable<T extends Vertex> implements CloseableIterable<
                         try {
                             return new GephiVertex(node, graph);
                         } catch (final IllegalStateException e) {
-                            // tried to access a node not available to the transaction
+                           //TODO need to consider this case
                         }
                     }
                 }

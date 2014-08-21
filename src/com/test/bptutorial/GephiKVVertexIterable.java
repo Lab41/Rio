@@ -29,7 +29,7 @@ import java.util.NoSuchElementException;
 
         public Iterator<GephiVertex> iterator(){
 
-            final Iterator<Node> it = graph.getGraphModel().getGraph().getNodes().iterator();
+            final Iterator<Node> it = graph.getGraphModel().getGraph().getNodes().toCollection().iterator();
 
 
             return new Iterator<GephiVertex>() {

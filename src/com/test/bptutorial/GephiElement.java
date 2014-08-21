@@ -7,6 +7,7 @@ package com.test.bptutorial;
 import com.tinkerpop.blueprints.Edge;
 import com.tinkerpop.blueprints.Vertex;
 import com.tinkerpop.blueprints.util.ElementHelper;
+import org.gephi.attribute.api.Column;
 import org.gephi.graph.api.Element;
 
 import java.util.*;
@@ -15,17 +16,15 @@ abstract class GephiElement implements com.tinkerpop.blueprints.Element {
 
     protected final GephiGraph graph;
     protected Element element;
-    protected ArrayList<String> keyList = new ArrayList<String>();
+    protected HashSet<String> keyList = new HashSet<String>();
 
     public GephiElement(GephiGraph graph){
-
         this.graph = graph;
-        //this.element.removeAttribute("weight");
     }
 
     public <T> T getProperty(String key){
 
-        //return (T) this.element.getAttribute(key);
+
         if(this instanceof Vertex){
             if(this.graph.getGraphModel().getNodeTable().hasColumn(key)){
                 return (T)this.element.getAttribute(key);
@@ -52,6 +51,7 @@ abstract class GephiElement implements com.tinkerpop.blueprints.Element {
 
     public void setProperty(String key,Object value){
 
+        key = key.toLowerCase();
         ElementHelper.validateProperty(this, key, value);
 
         if(this instanceof Vertex){

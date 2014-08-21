@@ -26,7 +26,7 @@ public class GephiKVEdgeIterable <T extends com.tinkerpop.blueprints.Edge> imple
 
     public Iterator<GephiEdge> iterator(){
 
-        final Iterator<Edge> it = graph.getGraphModel().getGraph().getEdges().iterator();
+        final Iterator<Edge> it = graph.getGraphModel().getGraph().getEdges().toCollection().iterator();
 
 
         return new Iterator<GephiEdge>() {

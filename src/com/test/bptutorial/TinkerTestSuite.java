@@ -8,7 +8,9 @@ import com.tinkerpop.blueprints.impls.tg.TinkerGraph;
 import org.gephi.graph.store.GraphFactoryImpl;
 import org.gephi.graph.store.GraphModelImpl;
 import org.gephi.graph.store.GraphStore;
-
+import com.tinkerpop.blueprints.util.io.gml.GMLReaderTestSuite;
+import com.tinkerpop.blueprints.util.io.graphml.GraphMLReaderTestSuite;
+import com.tinkerpop.blueprints.util.io.graphson.GraphSONReaderTestSuite;
 /**
  * Created by aganesh on 7/24/14.
  */
@@ -25,50 +27,49 @@ public class TinkerTestSuite extends GraphTest {
         printTestPerformance("EdgeTestSuite", this.stopWatch());
     }
 
-    /*public void testGraphTestSuite() throws Exception {
+    public void testGraphTestSuite() throws Exception {
         this.stopWatch();
         doTestSuite(new GraphTestSuite(this));
         printTestPerformance("GraphTestSuite", this.stopWatch());
     }
 
-    public void testKeyIndexableGraphTestSuite() throws Exception {
+    /*public void testKeyIndexableGraphTestSuite() throws Exception {
         this.stopWatch();
         doTestSuite(new KeyIndexableGraphTestSuite(this));
         printTestPerformance("KeyIndexableGraphTestSuite", this.stopWatch());
-    }
+    }*/
 
-    public void testIndexableGraphTestSuite() throws Exception {
+    /*public void testIndexableGraphTestSuite() throws Exception {
         this.stopWatch();
         doTestSuite(new IndexableGraphTestSuite(this));
         printTestPerformance("IndexableGraphTestSuite", this.stopWatch());
-    }
+    }*/
 
-    public void testIndexTestSuite() throws Exception {
+    /*public void testIndexTestSuite() throws Exception {
         this.stopWatch();
         doTestSuite(new IndexTestSuite(this));
         printTestPerformance("IndexTestSuite", this.stopWatch());
-    }
+    }*/
 
-    public void testGraphMLReaderTestSuite() throws Exception {
+    /*public void testGraphMLReaderTestSuite() throws Exception {
         this.stopWatch();
         doTestSuite(new GraphMLReaderTestSuite(this));
         printTestPerformance("GraphMLReaderTestSuite", this.stopWatch());
-    }
+    }*/
 
-    public void testGMLReaderTestSuite() throws Exception {
+    /*public void testGMLReaderTestSuite() throws Exception {
         this.stopWatch();
         doTestSuite(new GMLReaderTestSuite(this));
         printTestPerformance("GMLReaderTestSuite", this.stopWatch());
-    }
+    }*/
 
-    public void testGraphSONReaderTestSuite() throws Exception {
+    /*public void testGraphSONReaderTestSuite() throws Exception {
         this.stopWatch();
         doTestSuite(new GraphSONReaderTestSuite(this));
         printTestPerformance("GraphSONReaderTestSuite", this.stopWatch());
     }*/
 
     public Graph generateGraph() {
-        //return new TinkerGraph();
         GraphModelImpl gl = new GraphModelImpl();
         //GraphStore gp = new GraphStore(gl);
         //GraphFactoryImpl gf = new GraphFactoryImpl(gp);

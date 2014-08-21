@@ -11,7 +11,6 @@ import java.util.Iterator;
 
 public class GephiEdgeIterable <T extends com.tinkerpop.blueprints.Edge> implements CloseableIterable<GephiEdge> {
 
-    //private Iterable<Edge> edges;
     private EdgeIterable edges;
     private GephiGraph graph;
 
@@ -23,7 +22,6 @@ public class GephiEdgeIterable <T extends com.tinkerpop.blueprints.Edge> impleme
     public Iterator<GephiEdge> iterator(){
         return new Iterator<GephiEdge>() {
 
-            //private Iterator<Edge> it = edges.iterator();
             private Iterator<Edge> it = edges.toCollection().iterator();
             private Edge nextEdge = null;
 
@@ -60,7 +58,7 @@ public class GephiEdgeIterable <T extends com.tinkerpop.blueprints.Edge> impleme
                         try {
                             return new GephiEdge(edge, graph);
                         } catch (final IllegalStateException e) {
-                            // tried to access a relationship not available to the transaction
+
                         }
                     }
                 }
