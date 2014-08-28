@@ -81,7 +81,7 @@ public class GephiVertex extends GephiElement implements Vertex {
 
         public Iterator<GephiVertex> iterator(){
 
-            //TODO Cut this down to two iterators
+            //TODO Cut this down
             final Iterator<Node> itIn = graph.getGraphModel().getDirectedGraph().getPredecessors(node).toCollection().iterator();
             final Iterator<Node> itOut = graph.getGraphModel().getDirectedGraph().getSuccessors(node).toCollection().iterator();
             final Iterator<Edge> itEdgeIn = graph.getGraphModel().getDirectedGraph().getInEdges(node).toCollection().iterator();

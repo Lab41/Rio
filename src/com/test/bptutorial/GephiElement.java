@@ -54,6 +54,10 @@ abstract class GephiElement implements com.tinkerpop.blueprints.Element {
         key = key.toLowerCase();
         ElementHelper.validateProperty(this, key, value);
 
+        if(key.equals("weight")){
+            value = (Double.parseDouble(value.toString()));
+        }
+
         if(this instanceof Vertex){
             if(this.graph.getGraphModel().getNodeTable().hasColumn(key)){
                 this.element.setAttribute(key,value);

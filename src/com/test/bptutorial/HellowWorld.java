@@ -5,7 +5,8 @@ package com.test.bptutorial;
  */
 
 import com.tinkerpop.blueprints.*;
-import com.tinkerpop.blueprints.impls.GraphTest;
+//import com.tinkerpop.blueprints.impls.GraphTest;
+import com.test.bptest.impls.GraphTest;
 import com.tinkerpop.blueprints.impls.tg.TinkerGraph;
 import org.gephi.attribute.api.AttributeModel;
 import org.gephi.attribute.api.Table;
@@ -46,7 +47,7 @@ public class HellowWorld {
         a.setAttribute("boolean", true);
         a.setAttribute("key","value");
         //a.removeAttribute("key");
-        a.removeAttribute("boolean");
+        //a.removeAttribute("boolean");
 
         //Boolean x = (Boolean) a.removeAttribute("ooolean");
         //System.out.println(a.getAttribute("boolean"));
@@ -111,7 +112,7 @@ public class HellowWorld {
         Edge z = graph.addEdge(null, a, b, "hates");
         Edge zz = graph.addEdge(null, c, c, "hates");*/
 
-
+        System.out.println(Double.parseDouble("0.5"));
 
 
     }

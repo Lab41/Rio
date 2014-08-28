@@ -20,7 +20,7 @@ import java.util.NoSuchElementException;
         private String key;
         private Object value;
 
-        public GephiKVVertexIterable(NodeIterable edges, GephiGraph graph, String key, Object value){
+        public GephiKVVertexIterable(NodeIterable nodes, GephiGraph graph, String key, Object value){
             this.graph = graph;
             this.nodes = nodes;
             this.key = key;

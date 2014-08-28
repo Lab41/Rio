@@ -1,16 +1,24 @@
 package com.test.bptutorial;
 
-import com.tinkerpop.blueprints.impls.GraphTest;
+//import com.tinkerpop.blueprints.impls.GraphTest;
+import com.test.bptest.TestSuite;
+import com.test.bptest.VertexTestSuite;
+import com.test.bptest.EdgeTestSuite;
+import com.test.bptest.*;
+import com.test.bptest.util.io.graphml.GraphMLReaderTestSuite;
+import com.test.bptest.util.io.graphson.GraphSONReaderTestSuite;
 import com.tinkerpop.blueprints.*;
+import com.test.bptest.impls.GraphTest;
 
 import java.lang.reflect.Method;
 import com.tinkerpop.blueprints.impls.tg.TinkerGraph;
 import org.gephi.graph.store.GraphFactoryImpl;
 import org.gephi.graph.store.GraphModelImpl;
 import org.gephi.graph.store.GraphStore;
-import com.tinkerpop.blueprints.util.io.gml.GMLReaderTestSuite;
-import com.tinkerpop.blueprints.util.io.graphml.GraphMLReaderTestSuite;
-import com.tinkerpop.blueprints.util.io.graphson.GraphSONReaderTestSuite;
+//import com.tinkerpop.blueprints.util.io.gml.GMLReaderTestSuite;
+//import com.tinkerpop.blueprints.util.io.graphml.GraphMLReaderTestSuite;
+//import com.tinkerpop.blueprints.util.io.graphson.GraphSONReaderTestSuite;
+import com.test.bptest.util.io.gml.GMLReaderTestSuite;
 /**
  * Created by aganesh on 7/24/14.
  */

@@ -15,7 +15,7 @@ public class GephiEdge extends GephiElement implements com.tinkerpop.blueprints.
         super(graph);
         this.element = edge;
         //TODO remove this in final cut, removed weight attribute b/c test specifically added weight property
-        this.element.removeAttribute("weight");
+        //this.element.removeAttribute("weight");
     }
 
     public Vertex getVertex(Direction direction) throws IllegalArgumentException{

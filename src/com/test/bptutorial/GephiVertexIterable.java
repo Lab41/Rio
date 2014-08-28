@@ -25,7 +25,6 @@ public class GephiVertexIterable<T extends Vertex> implements CloseableIterable<
     public Iterator<GephiVertex> iterator(){
         return new Iterator<GephiVertex>() {
 
-
             private Iterator<Node> it = nodes.toCollection().iterator();
             private Node nextNode = null;
 

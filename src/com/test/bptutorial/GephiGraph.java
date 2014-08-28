@@ -82,6 +82,8 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph{
     public Vertex getVertex(Object id){
         if (id == null) throw ExceptionFactory.vertexIdCanNotBeNull();
 
+        id = id.toString();
+
         if(this.graphModel.getGraph().getNode(id) != null ){
             return new GephiVertex(this.graphModel.getGraph().getNode(id),this);
         }
@@ -100,7 +102,7 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph{
             Iterator<Edge> itrIn = this.graphModel.getDirectedGraph().getInEdges(node).toCollection().iterator();
             Iterator<Edge> itrOut = this.graphModel.getDirectedGraph().getOutEdges(node).toCollection().iterator();
 
-            //TODO: Figure out correcting locking mechanism if needed
+            //TODO: Locking
             while(itrIn.hasNext()){
                 this.graphModel.getGraph().removeEdge(itrIn.next());
             }
@@ -136,8 +138,10 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph{
 
         Edge gsEdge;
 
-        gsEdge = this.graphModel.factory().newEdge(source, target, this.graphModel.addEdgeType(label), true);
+        //gsEdge = this.graphModel.factory().newEdge(id,source, target, this.graphModel.addEdgeType(label),0, true);
+        gsEdge = this.graphModel.factory().newEdge(source, target, this.graphModel.addEdgeType(label),true);
         gsEdge.setAttribute("label",label);
+        //gsEdge.setAttribute("id", id);
         this.graphModel.getGraph().addEdge(gsEdge);
 
         return new GephiEdge(gsEdge,this);
