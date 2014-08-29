@@ -1,9 +1,7 @@
 package org.lab41.bptutorial;
 
-import com.tinkerpop.blueprints.EdgeTestSuite;
-import com.tinkerpop.blueprints.Graph;
-import com.tinkerpop.blueprints.GraphTestSuite;
-import com.tinkerpop.blueprints.TestSuite;
+import com.tinkerpop.blueprints.*;
+import com.tinkerpop.blueprints.impls.GraphTest;
 import org.gephi.graph.store.GraphModelImpl;
 import org.junit.Test;
 
@@ -12,12 +10,12 @@ import java.lang.reflect.Method;
 /**
  * Created by aganesh on 7/24/14.
  */
-public class TinkerTestSuite extends com.tinkerpop.blueprints.impls.GraphTest {
+public class TinkerTestSuite extends GraphTest {
 
     @Test
     public void testVertexTestSuite() throws Exception {
         this.stopWatch();
-        doTestSuite(new com.tinkerpop.blueprints.VertexTestSuite(this));
+        doTestSuite(new VertexTestSuite(this));
         printTestPerformance("VertexTestSuite", this.stopWatch());
     }
 
