@@ -21,6 +21,8 @@ import java.util.Random;
 import java.util.Set;
 import java.util.UUID;
 
+import static org.junit.Assert.*;
+
 
 /**
  * @author Marko A. Rodriguez (http://markorodriguez.com)
@@ -815,13 +817,13 @@ public class GraphTestSuite extends TestSuite {
 
             String type = e.getProperty("string");
             assertEquals(type, "friend");
-            Double weight = e.getProperty("double");
-            assertEquals(weight, 1.0d);
+            double weight = e.getProperty("double");
+            assertEquals(weight, 1.0, 0.1);
 
             type = e.removeProperty("string");
             assertEquals(type, "friend");
             weight = e.removeProperty("double");
-            assertEquals(weight, 1.0d);
+            assertEquals(weight, 1.0, 0.1);
         }
         graph.shutdown();
     }

@@ -13,6 +13,8 @@ import java.util.Random;
 import java.util.Set;
 import java.util.UUID;
 
+import static org.junit.Assert.*;
+
 /**
  * @author Marko A. Rodriguez (http://markorodriguez.com)
  */

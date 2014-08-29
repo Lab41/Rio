@@ -4,6 +4,8 @@ import com.tinkerpop.blueprints.*;
 //import com.tinkerpop.blueprints.impls.GraphTest;
 import  org.lab41.bptutorial.impls.GraphTest;
 
+import static org.junit.Assert.assertEquals;
+
 /**
  * @author Marko A. Rodriguez (http://markorodriguez.com)
  */

@@ -22,6 +22,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
 
+import static org.junit.Assert.*;
+
 /**
  * @author Marko A. Rodriguez (http://markorodriguez.com)
  */

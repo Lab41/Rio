@@ -10,6 +10,7 @@ import java.util.Set;
 import java.util.UUID;
 
 import static com.tinkerpop.blueprints.Direction.*;
+import static org.junit.Assert.*;
 
 
 /**

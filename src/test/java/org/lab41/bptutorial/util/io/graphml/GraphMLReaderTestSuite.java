@@ -17,6 +17,10 @@ import java.io.FileInputStream;
 import java.util.HashSet;
 import java.util.Set;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+
 /**
  * @author Marko A. Rodriguez (http://markorodriguez.com)
  */

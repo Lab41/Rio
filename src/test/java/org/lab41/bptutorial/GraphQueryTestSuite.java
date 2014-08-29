@@ -9,6 +9,10 @@ import com.tinkerpop.blueprints.*;
 //import com.tinkerpop.blueprints.impls.GraphTest;
 import org.lab41.bptutorial.impls.GraphTest;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
+
 /**
  * @author Marko A. Rodriguez (http://markorodriguez.com)
  */

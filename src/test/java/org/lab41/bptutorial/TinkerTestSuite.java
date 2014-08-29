@@ -1,6 +1,7 @@
 package org.lab41.bptutorial;
 
 //import com.tinkerpop.blueprints.impls.GraphTest;
+import org.junit.Test;
 import org.lab41.bptutorial.TestSuite;
 import org.lab41.bptutorial.VertexTestSuite;
 import org.lab41.bptutorial.EdgeTestSuite;
@@ -23,18 +24,22 @@ import org.lab41.bptutorial.util.io.gml.GMLReaderTestSuite;
  * Created by aganesh on 7/24/14.
  */
 public class TinkerTestSuite extends GraphTest {
+
+    @Test
     public void testVertexTestSuite() throws Exception {
         this.stopWatch();
         doTestSuite(new VertexTestSuite(this));
         printTestPerformance("VertexTestSuite", this.stopWatch());
     }
 
+    @Test
     public void testEdgeTestSuite() throws Exception {
         this.stopWatch();
         doTestSuite(new EdgeTestSuite(this));
         printTestPerformance("EdgeTestSuite", this.stopWatch());
     }
 
+    @Test
     public void testGraphTestSuite() throws Exception {
         this.stopWatch();
         doTestSuite(new GraphTestSuite(this));

@@ -7,10 +7,13 @@ import org.lab41.bptutorial.impls.GraphTest;
 
 import java.util.Collection;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
+
 /**
  * @author Marko A. Rodriguez (http://markorodriguez.com)
  */
-public abstract class TestSuite extends org.lab41.bptutorial.BaseTest {
+public abstract class TestSuite extends BaseTest {
 
     protected GraphTest graphTest;
 
@@ -22,14 +25,17 @@ public abstract class TestSuite extends org.lab41.bptutorial.BaseTest {
     }
 
     protected void vertexCount(final Graph graph, int expectedCount) {
-        if (graph.getFeatures().supportsVertexIteration) assertEquals(count(graph.getVertices()), expectedCount);
+        if (graph.getFeatures().supportsVertexIteration) {
+            assertEquals(count(graph.getVertices()), expectedCount);
+        }
     }
 
     protected void containsVertices(final Graph graph, final Collection<Vertex> vertices) {
         for (Vertex v : vertices) {
             Vertex vp = graph.getVertex(v.getId());
-            if (vp == null || !vp.getId().equals(v.getId()))
+            if (vp == null || !vp.getId().equals(v.getId())) {
                 fail("Graph does not contain vertex: '" + v + "'");
+            }
         }
     }
 

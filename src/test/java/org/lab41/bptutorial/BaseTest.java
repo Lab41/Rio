@@ -1,7 +1,6 @@
 package org.lab41.bptutorial;
 
 import com.tinkerpop.blueprints.CloseableIterable;
-import junit.framework.TestCase;
 
 import java.io.File;
 import java.net.URL;
@@ -9,10 +8,12 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
+
 /**
  * @author Marko A. Rodriguez (http://markorodriguez.com)
  */
-public abstract class BaseTest extends TestCase {
+public abstract class BaseTest {
 
     double timer = -1.0d;
 

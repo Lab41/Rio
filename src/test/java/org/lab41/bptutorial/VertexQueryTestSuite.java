@@ -8,6 +8,9 @@ import java.util.Arrays;
 import java.util.List;
 
 import static com.tinkerpop.blueprints.Direction.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 /**
  * @author Marko A. Rodriguez (http://markorodriguez.com)

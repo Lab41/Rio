@@ -7,6 +7,8 @@ import org.lab41.bptutorial.impls.GraphTest;
 import java.util.HashSet;
 import java.util.Set;
 
+import static org.junit.Assert.*;
+
 /**
  * @author Marko A. Rodriguez (http://markorodriguez.com)
  */
