@@ -50,7 +50,7 @@ public class GraphMLReaderTestSuite extends TestSuite {
                     assertEquals(e.getId(), "7");
                     counter++;
                 } else if (e.getVertex(Direction.IN).getId().equals("3")) {
-                    assertEquals(Math.round((Float) e.getProperty("weight")), 0);
+                    assertEquals(Math.round((Double) e.getProperty("weight")), 0);
                     assertEquals(e.getLabel(), "created");
                     assertEquals(e.getId(), "9");
                     counter++;
@@ -69,12 +69,12 @@ public class GraphMLReaderTestSuite extends TestSuite {
             assertEquals(josh.getProperty("age"), 32);
             for (Edge e : graph.getVertex("4").getEdges(Direction.OUT)) {
                 if (e.getVertex(Direction.IN).getId().equals("3")) {
-                    assertEquals(Math.round((Float) e.getProperty("weight")), 0);
+                    assertEquals(Math.round((Double) e.getProperty("weight")), 0);
                     assertEquals(e.getLabel(), "created");
                     assertEquals(e.getId(), "11");
                     counter++;
                 } else if (e.getVertex(Direction.IN).getId().equals("5")) {
-                    assertEquals(Math.round((Float) e.getProperty("weight")), 1);
+                    assertEquals(Math.round((Double) e.getProperty("weight")), 1);
                     assertEquals(e.getLabel(), "created");
                     assertEquals(e.getId(), "10");
                     counter++;
@@ -323,14 +323,14 @@ public class GraphMLReaderTestSuite extends TestSuite {
                     assertEquals(e.getId(), "7");
                     counter++;
                 } else if (e.getVertex(Direction.IN).getId().equals("3")) {
-                    assertEquals(Math.round((Float) e.getProperty("weight")), 0);
+                    assertEquals(Math.round((Double) e.getProperty("weight")), 0);
                     assertEquals(e.getProperty("_id"), 10);
                     assertEquals(e.getProperty("_label"), "has high fived");
                     assertEquals(e.getLabel(), "created");
                     assertEquals(e.getId(), "9");
                     counter++;
                 } else if (e.getVertex(Direction.IN).getId().equals("4")) {
-                    assertEquals(Math.round((Float) e.getProperty("weight")), 1);
+                    assertEquals(Math.round((Double) e.getProperty("weight")), 1);
                     assertEquals(e.getProperty("_id"), 9);
                     assertEquals(e.getProperty("_label"), "has high fived");
                     assertEquals(e.getLabel(), "knows");
@@ -360,14 +360,14 @@ public class GraphMLReaderTestSuite extends TestSuite {
             assertEquals(josh.getProperty("age"), 32);
             for (Edge e : graph.getVertex("4").getEdges(Direction.OUT)) {
                 if (e.getVertex(Direction.IN).getId().equals("3")) {
-                    assertEquals(Math.round((Float) e.getProperty("weight")), 0);
+                    assertEquals(Math.round((Double) e.getProperty("weight")), 0);
                     assertEquals(e.getProperty("_id"), 13);
                     assertEquals(e.getProperty("_label"), null);
                     assertEquals(e.getLabel(), "created");
                     assertEquals(e.getId(), "11");
                     counter++;
                 } else if (e.getVertex(Direction.IN).getId().equals("5")) {
-                    assertEquals(Math.round((Float) e.getProperty("weight")), 1);
+                    assertEquals(Math.round((Double) e.getProperty("weight")), 1);
                     assertEquals(e.getProperty("_id"), 11);
                     assertEquals(e.getProperty("_label"), "has high fived");
                     assertEquals(e.getLabel(), "created");
@@ -391,7 +391,7 @@ public class GraphMLReaderTestSuite extends TestSuite {
 
             for (Edge e : graph.getVertex("6").getEdges(Direction.OUT)) {
                 if (e.getVertex(Direction.IN).getId().equals("3")) {
-                    assertEquals(Math.round((Float) e.getProperty("weight")), 0);
+                    assertEquals(Math.round((Double) e.getProperty("weight")), 0);
                     assertEquals(e.getProperty("_id"), null);
                     assertEquals(e.getProperty("_label"), null);
                     assertEquals(e.getLabel(), "created");
@@ -667,14 +667,14 @@ public class GraphMLReaderTestSuite extends TestSuite {
                     assertEquals(e.getId(), "7");
                     counter++;
                 } else if (e.getVertex(Direction.IN).getId().equals("3")) {
-                    assertEquals(Math.round((Float) e.getProperty("weight")), 0);
+                    assertEquals(Math.round((Double) e.getProperty("weight")), 0);
                     assertEquals(e.getProperty("_id"), 10);
                     assertEquals(e.getProperty("_label"), "has high fived");
                     assertEquals(e.getLabel(), "created");
                     assertEquals(e.getId(), "9");
                     counter++;
                 } else if (e.getVertex(Direction.IN).getId().equals("4")) {
-                    assertEquals(Math.round((Float) e.getProperty("weight")), 1);
+                    assertEquals(Math.round((Double) e.getProperty("weight")), 1);
                     assertEquals(e.getProperty("_id"), 9);
                     assertEquals(e.getProperty("_label"), "has high fived");
                     assertEquals(e.getLabel(), "knows");
@@ -704,14 +704,14 @@ public class GraphMLReaderTestSuite extends TestSuite {
             assertEquals(josh.getProperty("age"), 32);
             for (Edge e : toGraph.getVertex("4").getEdges(Direction.OUT)) {
                 if (e.getVertex(Direction.IN).getId().equals("3")) {
-                    assertEquals(Math.round((Float) e.getProperty("weight")), 0);
+                    assertEquals(Math.round((Double) e.getProperty("weight")), 0);
                     assertEquals(e.getProperty("_id"), 13);
                     assertEquals(e.getProperty("_label"), null);
                     assertEquals(e.getLabel(), "created");
                     assertEquals(e.getId(), "11");
                     counter++;
                 } else if (e.getVertex(Direction.IN).getId().equals("5")) {
-                    assertEquals(Math.round((Float) e.getProperty("weight")), 1);
+                    assertEquals(Math.round((Double) e.getProperty("weight")), 1);
                     assertEquals(e.getProperty("_id"), 11);
                     assertEquals(e.getProperty("_label"), "has high fived");
                     assertEquals(e.getLabel(), "created");
@@ -735,7 +735,7 @@ public class GraphMLReaderTestSuite extends TestSuite {
 
             for (Edge e : toGraph.getVertex("6").getEdges(Direction.OUT)) {
                 if (e.getVertex(Direction.IN).getId().equals("3")) {
-                    assertEquals(Math.round((Float) e.getProperty("weight")), 0);
+                    assertEquals(Math.round((Double) e.getProperty("weight")), 0);
                     assertEquals(e.getProperty("_id"), null);
                     assertEquals(e.getProperty("_label"), null);
                     assertEquals(e.getLabel(), "created");

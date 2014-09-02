@@ -46,6 +46,21 @@ public class HellowWorld {
 
         a.setAttribute("boolean", true);
         a.setAttribute("key","value");
+
+        Set<String> set = a.getAttributeKeys();
+        Object[] arr = set.toArray();
+
+       /* for(int i = 0; i < arr.length; i++){
+            System.out.println(arr[i].toString());
+        }
+
+        System.out.println("   ");*/
+
+        Object[] arr2 = a.getAttributes();
+        for(int i = 0; i < arr2.length; i++){
+            System.out.println(arr2[i] + "" + arr[i].toString());
+        }
+
         //a.removeAttribute("key");
         //a.removeAttribute("boolean");
 
@@ -112,7 +127,7 @@ public class HellowWorld {
         Edge z = graph.addEdge(null, a, b, "hates");
         Edge zz = graph.addEdge(null, c, c, "hates");*/
 
-        System.out.println(Double.parseDouble("0.5"));
+        //System.out.println(Double.parseDouble("0.5"));
 
 
     }

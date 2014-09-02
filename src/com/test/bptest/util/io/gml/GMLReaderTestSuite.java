@@ -12,6 +12,7 @@ import com.tinkerpop.blueprints.impls.tg.TinkerGraph;
 import com.tinkerpop.blueprints.util.io.gml.GMLReader;
 import com.tinkerpop.blueprints.util.io.gml.GMLTokens;
 import com.tinkerpop.blueprints.util.io.graphml.GraphMigrator;
+import java.io.FileInputStream;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -34,7 +35,7 @@ public class GMLReaderTestSuite extends TestSuite {
         if (!graph.getFeatures().ignoresSuppliedIds) {
             this.stopWatch();
             GMLReader gmlReader = new GMLReader(graph);
-            gmlReader.inputGraph(GMLReader.class.getResourceAsStream("graph-example-1.gml"));
+            gmlReader.inputGraph(new FileInputStream("/Users/aganesh/InternalLab41/gephi-blueprints/src/com/test/bptest/res/graph-example-1.gml"));
             printPerformance(graph.toString(), null, "graph-example-1 loaded", this.stopWatch());
 
             assertEquals(count(graph.getVertex("1").getEdges(Direction.OUT)), 3);
@@ -86,7 +87,7 @@ public class GMLReaderTestSuite extends TestSuite {
         if (graph.getFeatures().supportsEdgeIteration) {
             this.stopWatch();
             GMLReader gmlReader = new GMLReader(graph);
-            gmlReader.inputGraph(GMLReader.class.getResourceAsStream("graph-example-1.gml"));
+            gmlReader.inputGraph(new FileInputStream("/Users/aganesh/InternalLab41/gephi-blueprints/src/com/test/bptest/res/graph-example-1.gml"));
             printPerformance(graph.toString(), null, "graph-example-1 loaded", this.stopWatch());
             Set<String> edgeIds = new HashSet<String>();
             Set<String> edgeKeys = new HashSet<String>();
@@ -112,7 +113,7 @@ public class GMLReaderTestSuite extends TestSuite {
         Graph graph = graphTest.generateGraph();
         if (graph.getFeatures().supportsVertexIteration) {
             this.stopWatch();
-            new GMLReader(graph).inputGraph(GMLReader.class.getResourceAsStream("graph-example-1.gml"));
+            new GMLReader(graph).inputGraph(new FileInputStream("/Users/aganesh/InternalLab41/gephi-blueprints/src/com/test/bptest/res/graph-example-1.gml"));
             printPerformance(graph.toString(), null, "graph-example-1 loaded", this.stopWatch());
             Set<String> vertexNames = new HashSet<String>();
             int count = 0;
@@ -137,7 +138,7 @@ public class GMLReaderTestSuite extends TestSuite {
         Graph graph = graphTest.generateGraph();
         if (graph.getFeatures().supportsVertexIteration) {
             this.stopWatch();
-            new GMLReader(graph).inputGraph(GMLReader.class.getResourceAsStream("graph-example-1.gml"));
+            new GMLReader(graph).inputGraph(new FileInputStream("/Users/aganesh/InternalLab41/gephi-blueprints/src/com/test/bptest/res/graph-example-1.gml"));
             printPerformance(graph.toString(), null, "graph-example-1 loaded", this.stopWatch());
             Set<Vertex> softwareVertices = new HashSet<Vertex>();
             int count = 0;
@@ -162,7 +163,7 @@ public class GMLReaderTestSuite extends TestSuite {
         if (graph.getFeatures().supportsVertexIteration) {
             this.stopWatch();
             GMLReader gmlReader = new GMLReader(graph);
-            gmlReader.inputGraph(GMLReader.class.getResourceAsStream("graph-example-1.gml"));
+            gmlReader.inputGraph(new FileInputStream("/Users/aganesh/InternalLab41/gephi-blueprints/src/com/test/bptest/res/graph-example-1.gml"));
             printPerformance(graph.toString(), null, "graph-example-1 loaded", this.stopWatch());
             Vertex marko = null;
             Vertex peter = null;
@@ -296,7 +297,7 @@ public class GMLReaderTestSuite extends TestSuite {
             this.stopWatch();
             GMLReader gmlReader = new GMLReader(graph);
             gmlReader.setEdgeIdKey(GMLTokens.ID);
-            gmlReader.inputGraph(GMLReader.class.getResourceAsStream("graph-example-3.gml"), 1000);
+            gmlReader.inputGraph(new FileInputStream("/Users/aganesh/InternalLab41/gephi-blueprints/src/com/test/bptest/res/graph-example-3.gml"), 1000);
             printPerformance(graph.toString(), null, "graph-example-3 loaded", this.stopWatch());
 
             // Specific Graph Characteristics
@@ -385,7 +386,7 @@ public class GMLReaderTestSuite extends TestSuite {
 
             for (Edge e : graph.getVertex(6).getEdges(Direction.OUT)) {
                 if (e.getVertex(Direction.IN).getId().equals("3")) {
-                    assertEquals(Math.round((Float) e.getProperty("weight")), 0);
+                    assertEquals(Math.round((Double) e.getProperty("weight")), 0);
                     assertEquals(e.getProperty("id2"), null);
                     assertEquals(e.getProperty("label2"), null);
                     assertEquals(e.getLabel(), "created");
@@ -447,7 +448,7 @@ public class GMLReaderTestSuite extends TestSuite {
             GMLReader r = new GMLReader(graph);
             r.setEdgeLabelKey("label2");
             r.setEdgeIdKey("id");
-            r.inputGraph(GMLReader.class.getResourceAsStream("graph-example-3.gml"), 1000);
+            r.inputGraph(new FileInputStream("/Users/aganesh/InternalLab41/gephi-blueprints/src/com/test/bptest/res/graph-example-3.gml"), 1000);
             printPerformance(graph.toString(), null, "graph-example-3 loaded", this.stopWatch());
 
             Set<String> vertexIds = new HashSet<String>();
@@ -511,7 +512,7 @@ public class GMLReaderTestSuite extends TestSuite {
             GMLReader r = new GMLReader(graph);
             r.setVertexIdKey("id2");
             r.setEdgeIdKey("id2");
-            r.inputGraph(GMLReader.class.getResourceAsStream("graph-example-3.gml"), 1000);
+            r.inputGraph(new FileInputStream("/Users/aganesh/InternalLab41/gephi-blueprints/src/com/test/bptest/res/graph-example-3.gml"), 1000);
             printPerformance(graph.toString(), null, "graph-example-3 loaded", this.stopWatch());
 
             Set<String> vertexIds = new HashSet<String>();
@@ -576,7 +577,7 @@ public class GMLReaderTestSuite extends TestSuite {
             r.setVertexIdKey("id2");
             r.setEdgeIdKey("id2");
             r.setEdgeLabelKey("label2");
-            r.inputGraph(GMLReader.class.getResourceAsStream("graph-example-3.gml"), 1000);
+            r.inputGraph(new FileInputStream("/Users/aganesh/InternalLab41/gephi-blueprints/src/com/test/bptest/res/graph-example-3.gml"), 1000);
             printPerformance(graph.toString(), null, "graph-example-3 loaded", this.stopWatch());
 
             Set<String> vertexIds = new HashSet<String>();
@@ -640,7 +641,7 @@ public class GMLReaderTestSuite extends TestSuite {
             this.stopWatch();
             GMLReader gmlReader = new GMLReader(graph);
             gmlReader.setEdgeIdKey("id");
-            gmlReader.inputGraph(GMLReader.class.getResourceAsStream("graph-example-3.gml"), 1000);
+            gmlReader.inputGraph(new FileInputStream("/Users/aganesh/InternalLab41/gephi-blueprints/src/com/test/bptest/res/graph-example-3.gml"), 1000);
             printPerformance(graph.toString(), null, "graph-example-3 loaded", this.stopWatch());
 
             this.stopWatch();
@@ -668,14 +669,14 @@ public class GMLReaderTestSuite extends TestSuite {
                     assertEquals(e.getId(), "7");
                     counter++;
                 } else if (e.getVertex(Direction.IN).getId().equals("3")) {
-                    assertEquals(Math.round((Float) e.getProperty("weight")), 0);
+                    assertEquals(Math.round((Double) e.getProperty("weight")), 0);
                     assertEquals(e.getProperty("id2"), 10);
                     assertEquals(e.getProperty("label2"), "has high fived");
                     assertEquals(e.getLabel(), "created");
                     assertEquals(e.getId(), "9");
                     counter++;
                 } else if (e.getVertex(Direction.IN).getId().equals("4")) {
-                    assertEquals(Math.round((Float) e.getProperty("weight")), 1);
+                    assertEquals(Math.round((Double) e.getProperty("weight")), 1);
                     assertEquals(e.getProperty("id2"), 9);
                     assertEquals(e.getProperty("label2"), "has high fived");
                     assertEquals(e.getLabel(), "knows");
@@ -705,14 +706,14 @@ public class GMLReaderTestSuite extends TestSuite {
             assertEquals(josh.getProperty("age"), 32);
             for (Edge e : toGraph.getVertex(4).getEdges(Direction.OUT)) {
                 if (e.getVertex(Direction.IN).getId().equals("3")) {
-                    assertEquals(Math.round((Float) e.getProperty("weight")), 0);
+                    assertEquals(Math.round((Double) e.getProperty("weight")), 0);
                     assertEquals(e.getProperty("id2"), 13);
                     assertEquals(e.getProperty("label2"), null);
                     assertEquals(e.getLabel(), "created");
                     assertEquals(e.getId(), "11");
                     counter++;
                 } else if (e.getVertex(Direction.IN).getId().equals("5")) {
-                    assertEquals(Math.round((Float) e.getProperty("weight")), 1);
+                    assertEquals(Math.round((Double) e.getProperty("weight")), 1);
                     assertEquals(e.getProperty("id2"), 11);
                     assertEquals(e.getProperty("label2"), "has high fived");
                     assertEquals(e.getLabel(), "created");
@@ -736,7 +737,7 @@ public class GMLReaderTestSuite extends TestSuite {
 
             for (Edge e : toGraph.getVertex(6).getEdges(Direction.OUT)) {
                 if (e.getVertex(Direction.IN).getId().equals("3")) {
-                    assertEquals(Math.round((Float) e.getProperty("weight")), 0);
+                    assertEquals(Math.round((Double) e.getProperty("weight")), 0);
                     assertEquals(e.getProperty("id2"), null);
                     assertEquals(e.getProperty("label2"), null);
                     assertEquals(e.getLabel(), "created");

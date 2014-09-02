@@ -133,13 +133,17 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph{
         if(label == null)
             throw ExceptionFactory.edgeLabelCanNotBeNull();
 
+        if(id == null){
+            id = UUID.randomUUID();
+        }
+
         Node source = ((GephiVertex)outVertex).getRawVertex();
         Node target = ((GephiVertex)inVertex).getRawVertex();
 
         Edge gsEdge;
 
-        //gsEdge = this.graphModel.factory().newEdge(id,source, target, this.graphModel.addEdgeType(label),0, true);
-        gsEdge = this.graphModel.factory().newEdge(source, target, this.graphModel.addEdgeType(label),true);
+        gsEdge = this.graphModel.factory().newEdge(id.toString(),source, target, this.graphModel.addEdgeType(label),0, true);
+        //gsEdge = this.graphModel.factory().newEdge(source, target, this.graphModel.addEdgeType(label),true);
         gsEdge.setAttribute("label",label);
         //gsEdge.setAttribute("id", id);
         this.graphModel.getGraph().addEdge(gsEdge);

@@ -59,23 +59,23 @@ public class TinkerTestSuite extends GraphTest {
         printTestPerformance("IndexTestSuite", this.stopWatch());
     }*/
 
-    /*public void testGraphMLReaderTestSuite() throws Exception {
+    public void testGraphMLReaderTestSuite() throws Exception {
         this.stopWatch();
         doTestSuite(new GraphMLReaderTestSuite(this));
         printTestPerformance("GraphMLReaderTestSuite", this.stopWatch());
-    }*/
+    }
 
-    /*public void testGMLReaderTestSuite() throws Exception {
+    public void testGMLReaderTestSuite() throws Exception {
         this.stopWatch();
         doTestSuite(new GMLReaderTestSuite(this));
         printTestPerformance("GMLReaderTestSuite", this.stopWatch());
-    }*/
+    }
 
-    /*public void testGraphSONReaderTestSuite() throws Exception {
+    public void testGraphSONReaderTestSuite() throws Exception {
         this.stopWatch();
         doTestSuite(new GraphSONReaderTestSuite(this));
         printTestPerformance("GraphSONReaderTestSuite", this.stopWatch());
-    }*/
+    }
 
     public Graph generateGraph() {
         GraphModelImpl gl = new GraphModelImpl();

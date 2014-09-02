@@ -10,6 +10,7 @@ import com.tinkerpop.blueprints.Vertex;
 import com.test.bptest.impls.GraphTest;
 import com.tinkerpop.blueprints.util.io.graphson.GraphSONReader;
 
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.HashSet;
 import java.util.Set;
@@ -30,7 +31,7 @@ public class GraphSONReaderTestSuite extends TestSuite {
         Graph graph = graphTest.generateGraph();
         if (!graph.getFeatures().ignoresSuppliedIds) {
             this.stopWatch();
-            new GraphSONReader(graph).inputGraph(GraphSONReader.class.getResourceAsStream("graph-example-1.json"));
+            new GraphSONReader(graph).inputGraph(new FileInputStream("/Users/aganesh/InternalLab41/gephi-blueprints/src/com/test/bptest/res/graph-example-1.json"));
             printPerformance(graph.toString(), null, "graph-example-1 loaded", this.stopWatch());
 
             // note that TinkerGraph converts ids to string internally, but the various WrapperGraphs
@@ -91,7 +92,7 @@ public class GraphSONReaderTestSuite extends TestSuite {
         Graph graph = this.graphTest.generateGraph();
         if (graph.getFeatures().supportsEdgeIteration) {
             this.stopWatch();
-            new GraphSONReader(graph).inputGraph(GraphSONReader.class.getResourceAsStream("graph-example-1.json"));
+            new GraphSONReader(graph).inputGraph(new FileInputStream("/Users/aganesh/InternalLab41/gephi-blueprints/src/com/test/bptest/res/graph-example-1.json"));
             printPerformance(graph.toString(), null, "graph-example-1 loaded", this.stopWatch());
             Set<String> edgeIds = new HashSet<String>();
             Set<String> edgeKeys = new HashSet<String>();
@@ -117,7 +118,7 @@ public class GraphSONReaderTestSuite extends TestSuite {
         Graph graph = this.graphTest.generateGraph();
         if (graph.getFeatures().supportsVertexIteration) {
             this.stopWatch();
-            new GraphSONReader(graph).inputGraph(GraphSONReader.class.getResourceAsStream("graph-example-1.json"));
+            new GraphSONReader(graph).inputGraph(new FileInputStream("/Users/aganesh/InternalLab41/gephi-blueprints/src/com/test/bptest/res/graph-example-1.json"));
             printPerformance(graph.toString(), null, "graph-example-1 loaded", this.stopWatch());
             Set<String> vertexNames = new HashSet<String>();
             int count = 0;
@@ -142,7 +143,7 @@ public class GraphSONReaderTestSuite extends TestSuite {
         Graph graph = this.graphTest.generateGraph();
         if (graph.getFeatures().supportsVertexIteration) {
             this.stopWatch();
-            new GraphSONReader(graph).inputGraph(GraphSONReader.class.getResourceAsStream("graph-example-1.json"));
+            new GraphSONReader(graph).inputGraph(new FileInputStream("/Users/aganesh/InternalLab41/gephi-blueprints/src/com/test/bptest/res/graph-example-1.json"));
             printPerformance(graph.toString(), null, "graph-example-1 loaded", this.stopWatch());
             Set<Vertex> softwareVertices = new HashSet<Vertex>();
             int count = 0;
@@ -166,7 +167,7 @@ public class GraphSONReaderTestSuite extends TestSuite {
         Graph graph = this.graphTest.generateGraph();
         if (graph.getFeatures().supportsVertexIteration) {
             this.stopWatch();
-            new GraphSONReader(graph).inputGraph(GraphSONReader.class.getResourceAsStream("graph-example-1.json"));
+            new GraphSONReader(graph).inputGraph(new FileInputStream("/Users/aganesh/InternalLab41/gephi-blueprints/src/com/test/bptest/res/graph-example-1.json"));
             printPerformance(graph.toString(), null, "graph-example-1 loaded", this.stopWatch());
             Vertex marko = null;
             Vertex peter = null;

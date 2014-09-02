@@ -45,7 +45,33 @@ abstract class GephiElement implements com.tinkerpop.blueprints.Element {
     }
 
     public Set<String> getPropertyKeys(){
-        Set<String> keys = new HashSet<String>(this.keyList);
+        Set<String> keys = new HashSet<String>();
+        Set<String> defaultCols = new HashSet<String>();
+        defaultCols.add("id");
+        defaultCols.add("timestamp");
+        defaultCols.add("label");
+
+        //return keys;
+        Object[] keyArr = this.element.getAttributeKeys().toArray();
+        if(this instanceof Vertex){
+            for(int i = 0;  i < keyArr.length; i++){
+                if(!defaultCols.contains(keyArr[i])){
+                    if(this.element.getAttribute(keyArr[i].toString()) != null){
+                        keys.add(keyArr[i].toString());
+                    }
+
+                }
+            }
+        }
+        else{
+            for(int i = 0;  i < keyArr.length; i++){
+                if(!defaultCols.contains(keyArr[i])){
+                    if(this.element.getAttribute(keyArr[i].toString()) != null) {
+                        keys.add(keyArr[i].toString());
+                    }
+                }
+            }
+        }
         return keys;
     }
 
