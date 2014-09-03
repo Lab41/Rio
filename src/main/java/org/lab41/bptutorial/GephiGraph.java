@@ -1,6 +1,4 @@
-package com.test.bptutorial;
-
-
+package org.lab41.bptutorial;
 
 import com.tinkerpop.blueprints.Features;
 import com.tinkerpop.blueprints.Vertex;
@@ -18,7 +16,7 @@ import java.util.UUID;
 /**
  * Created by aganesh on 7/15/14.
  */
-public class GephiGraph implements com.tinkerpop.blueprints.Graph{
+public class GephiGraph implements com.tinkerpop.blueprints.Graph {
 
     private GraphModel graphModel;
 

@@ -1,4 +1,4 @@
-package com.test.bptutorial;
+package org.lab41.bptutorial;
 
 import com.tinkerpop.blueprints.CloseableIterable;
 import org.gephi.graph.api.Edge;

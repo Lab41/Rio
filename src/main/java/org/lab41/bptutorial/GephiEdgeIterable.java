@@ -1,4 +1,4 @@
-package com.test.bptutorial;
+package org.lab41.bptutorial;
 
 /**
  * Created by aganesh on 7/17/14.
