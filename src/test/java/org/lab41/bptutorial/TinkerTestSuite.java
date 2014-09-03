@@ -1,40 +1,32 @@
 package org.lab41.bptutorial;
 
-//import com.tinkerpop.blueprints.impls.GraphTest;
-import org.lab41.bptutorial.TestSuite;
-import org.lab41.bptutorial.VertexTestSuite;
-import org.lab41.bptutorial.EdgeTestSuite;
-import org.lab41.bptutorial.*;
-import org.lab41.bptutorial.util.io.graphml.GraphMLReaderTestSuite;
-import org.lab41.bptutorial.util.io.graphson.GraphSONReaderTestSuite;
 import com.tinkerpop.blueprints.*;
-import org.lab41.bptutorial.impls.GraphTest;
+import com.tinkerpop.blueprints.impls.GraphTest;
+import org.gephi.graph.store.GraphModelImpl;
+import org.junit.Test;
 
 import java.lang.reflect.Method;
-import com.tinkerpop.blueprints.impls.tg.TinkerGraph;
-import org.gephi.graph.store.GraphFactoryImpl;
-import org.gephi.graph.store.GraphModelImpl;
-import org.gephi.graph.store.GraphStore;
-//import com.tinkerpop.blueprints.util.io.gml.GMLReaderTestSuite;
-//import com.tinkerpop.blueprints.util.io.graphml.GraphMLReaderTestSuite;
-//import com.tinkerpop.blueprints.util.io.graphson.GraphSONReaderTestSuite;
-import org.lab41.bptutorial.util.io.gml.GMLReaderTestSuite;
+
 /**
  * Created by aganesh on 7/24/14.
  */
 public class TinkerTestSuite extends GraphTest {
+
+    @Test
     public void testVertexTestSuite() throws Exception {
         this.stopWatch();
         doTestSuite(new VertexTestSuite(this));
         printTestPerformance("VertexTestSuite", this.stopWatch());
     }
 
+    @Test
     public void testEdgeTestSuite() throws Exception {
         this.stopWatch();
         doTestSuite(new EdgeTestSuite(this));
         printTestPerformance("EdgeTestSuite", this.stopWatch());
     }
 
+    @Test
     public void testGraphTestSuite() throws Exception {
         this.stopWatch();
         doTestSuite(new GraphTestSuite(this));
@@ -77,6 +69,7 @@ public class TinkerTestSuite extends GraphTest {
         printTestPerformance("GraphSONReaderTestSuite", this.stopWatch());
     }*/
 
+    @Override
     public Graph generateGraph() {
         GraphModelImpl gl = new GraphModelImpl();
         //GraphStore gp = new GraphStore(gl);
@@ -85,11 +78,13 @@ public class TinkerTestSuite extends GraphTest {
         return graph;
     }
 
+    @Override
     public Graph generateGraph(String str){
         return generateGraph();
     }
 
-    public void doTestSuite(final TestSuite testSuite) throws Exception {
+    @Override
+    public void doTestSuite(TestSuite testSuite) throws Exception {
         String doTest = System.getProperty("testGephiGraph");
         if (doTest == null || doTest.equals("true")) {
             for (Method method : testSuite.getClass().getDeclaredMethods()) {

@@ -4,21 +4,8 @@ package org.lab41.bptutorial;
  * Created by aganesh on 7/15/14.
  */
 
-import com.tinkerpop.blueprints.*;
-//import com.tinkerpop.blueprints.impls.GraphTest;
-import org.lab41.bptutorial.impls.GraphTest;
-import com.tinkerpop.blueprints.impls.tg.TinkerGraph;
-import org.gephi.attribute.api.AttributeModel;
-import org.gephi.attribute.api.Table;
-import org.gephi.graph.api.Element;
 import org.gephi.graph.api.Node;
 import org.gephi.graph.store.*;
-
-import java.lang.reflect.Method;
-import java.lang.reflect.*;
-import java.lang.Class;
-import java.util.*;
-
 
 public class HellowWorld {
 
