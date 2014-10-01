@@ -2,6 +2,9 @@ package org.lab41.bptutorial;
 
 import com.tinkerpop.blueprints.*;
 import com.tinkerpop.blueprints.impls.GraphTest;
+import com.tinkerpop.blueprints.util.io.gml.GMLReaderTestSuite;
+import com.tinkerpop.blueprints.util.io.graphml.GraphMLReaderTestSuite;
+import com.tinkerpop.blueprints.util.io.graphson.GraphSONReaderTestSuite;
 import org.gephi.graph.store.GraphModelImpl;
 import org.junit.Test;
 
@@ -50,19 +53,19 @@ public class TinkerTestSuite extends GraphTest {
         doTestSuite(new IndexTestSuite(this));
         printTestPerformance("IndexTestSuite", this.stopWatch());
     }*/
-
+    @Test
     public void testGraphMLReaderTestSuite() throws Exception {
         this.stopWatch();
         doTestSuite(new GraphMLReaderTestSuite(this));
         printTestPerformance("GraphMLReaderTestSuite", this.stopWatch());
     }
-
+    @Test
     public void testGMLReaderTestSuite() throws Exception {
         this.stopWatch();
         doTestSuite(new GMLReaderTestSuite(this));
         printTestPerformance("GMLReaderTestSuite", this.stopWatch());
     }
-
+    @Test
     public void testGraphSONReaderTestSuite() throws Exception {
         this.stopWatch();
         doTestSuite(new GraphSONReaderTestSuite(this));

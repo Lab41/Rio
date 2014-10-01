@@ -7,6 +7,8 @@ package org.lab41.bptutorial;
 import org.gephi.graph.api.Node;
 import org.gephi.graph.store.*;
 
+import java.util.Set;
+
 public class HellowWorld {
 
     //Testing area for subset of tests
@@ -16,6 +18,8 @@ public class HellowWorld {
         GraphModelImpl gl = new GraphModelImpl();
         //GephiGraph graph = new GephiGraph(gl);
         org.gephi.graph.api.Graph test = gl.getGraph();
+
+
 
         //Vertex a = graph.addVertex(null);
         //Vertex b = graph.addVertex(null);
@@ -27,15 +31,39 @@ public class HellowWorld {
         //graph.removeEdge(edge);
 
         Node a = gl.factory().newNode("1");
+        Node b = gl.factory().newNode("2");
         test.addNode(a);
-        gl.getNodeTable().addColumn("boolean",Boolean.class);
-        gl.getNodeTable().addColumn("key", "value".getClass());
+        test.addNode(b);
 
-        a.setAttribute("boolean", true);
-        a.setAttribute("key","value");
+        org.gephi.graph.api.Edge x = gl.factory().newEdge("1",a,b,gl.addEdgeType("knows"),-1,true);
+        test.addEdge(x);
 
-        Set<String> set = a.getAttributeKeys();
-        Object[] arr = set.toArray();
+        System.out.println(a.getAttribute("label"));
+
+        //x.setAttribute("weight",Double.parseDouble("2.3"));
+        //System.out.println("HI");
+
+        Double temp = 1.3;
+        //Float we = temp.floatValue();
+
+
+        //Float d = Float.parseFloat("2.12f");
+
+
+        //Double xy = d.doubleValue();
+
+        //System.out.println(we);
+        //System.out.println(we);
+        //a.setAttribute("weight",2.3);
+
+        //gl.getNodeTable().addColumn("boolean",Boolean.class);
+        //gl.getNodeTable().addColumn("key", "value".getClass());
+
+        //a.setAttribute("boolean", true);
+        //a.setAttribute("key","value");
+
+        //Set<String> set = a.getAttributeKeys();
+        //Object[] arr = set.toArray();
 
        /* for(int i = 0; i < arr.length; i++){
             System.out.println(arr[i].toString());
@@ -43,10 +71,10 @@ public class HellowWorld {
 
         System.out.println("   ");*/
 
-        Object[] arr2 = a.getAttributes();
+        /*Object[] arr2 = a.getAttributes();
         for(int i = 0; i < arr2.length; i++){
             System.out.println(arr2[i] + "" + arr[i].toString());
-        }
+        }*/
 
         //a.removeAttribute("key");
         //a.removeAttribute("boolean");

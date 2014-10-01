@@ -10,6 +10,8 @@ import com.tinkerpop.blueprints.util.ElementHelper;
 import org.gephi.attribute.api.Column;
 import org.gephi.graph.api.Element;
 
+import java.lang.reflect.Method;
+import java.lang.reflect.Type;
 import java.util.*;
 
 abstract class GephiElement implements com.tinkerpop.blueprints.Element {
@@ -22,51 +24,65 @@ abstract class GephiElement implements com.tinkerpop.blueprints.Element {
         this.graph = graph;
     }
 
-    public <T> T getProperty(String key){
+    public <T> T getProperty(String key) {
 
-
-        if(this instanceof Vertex){
-            if(this.graph.getGraphModel().getNodeTable().hasColumn(key)){
-                return (T)this.element.getAttribute(key);
-            }
-            else{
-                return null;
+        if (this instanceof Vertex) {
+            if (this.graph.getGraphModel().getNodeTable().hasColumn(key)) {
+                return (T) this.element.getAttribute(key);
             }
         }
-        else{
-            if(this.graph.getGraphModel().getEdgeTable().hasColumn(key)){
+        else {
 
-                return (T)this.element.getAttribute(key);
+            if(key.equals("weight")){
+                if(this.element.getAttribute("weight").equals(-1.0)){
+                    return null;
+                }
+                else{
+                    return (T) this.element.getAttribute(key);
+                    //Double temp = Double.parseDouble(this.element.getAttribute(key).toString());
+                    //return (T) (Object)(Float.parseFloat(this.element.getAttribute(key).toString()));
+                }
             }
-            else{
-                return null;
+
+            if (this.graph.getGraphModel().getEdgeTable().hasColumn(key)) {
+                    return (T) this.element.getAttribute(key);
             }
         }
+        return null;
     }
 
     public Set<String> getPropertyKeys(){
         Set<String> keys = new HashSet<String>();
-        Set<String> defaultCols = new HashSet<String>();
-        defaultCols.add("id");
-        defaultCols.add("timestamp");
-        defaultCols.add("label");
+        Set<String> nodeDefaultCols = new HashSet<String>();
+        Set<String> edgeDefaultCols = new HashSet<String>();
 
-        //return keys;
+        nodeDefaultCols.add("id");
+        nodeDefaultCols.add("timestamp");
+        nodeDefaultCols.add("label");
+
+        edgeDefaultCols.add("id");
+        edgeDefaultCols.add("timestamp");
+        edgeDefaultCols.add("label");
+
         Object[] keyArr = this.element.getAttributeKeys().toArray();
         if(this instanceof Vertex){
             for(int i = 0;  i < keyArr.length; i++){
-                if(!defaultCols.contains(keyArr[i])){
+                if(!nodeDefaultCols.contains(keyArr[i])){
                     if(this.element.getAttribute(keyArr[i].toString()) != null){
                         keys.add(keyArr[i].toString());
                     }
-
                 }
             }
         }
-        else{
-            for(int i = 0;  i < keyArr.length; i++){
-                if(!defaultCols.contains(keyArr[i])){
-                    if(this.element.getAttribute(keyArr[i].toString()) != null) {
+        else {
+
+            if(this.element.getAttribute("weight").equals(-1.0)){
+                edgeDefaultCols.add("weight");
+            }
+
+            for(int i = 0; i < keyArr.length; i++) {
+                if (!edgeDefaultCols.contains(keyArr[i])) {
+                    if (this.element.getAttribute(keyArr[i].toString()) != null) {
                         keys.add(keyArr[i].toString());
                     }
                 }
@@ -110,6 +126,7 @@ abstract class GephiElement implements com.tinkerpop.blueprints.Element {
         }
 
     }
+
     public <T> T removeProperty(String key){
 
         if(this instanceof Vertex){
@@ -117,22 +134,23 @@ abstract class GephiElement implements com.tinkerpop.blueprints.Element {
                 this.keyList.remove(key);
                 return (T) this.element.removeAttribute(key);
             }
-            else{
-                return null;
-            }
         }
         else{
-            if(this.graph.getGraphModel().getEdgeTable().hasColumn(key)){
-                this.keyList.remove(key);
-                return (T) this.element.removeAttribute(key);
+          if (this.graph.getGraphModel().getEdgeTable().hasColumn(key)) {
+            this.keyList.remove(key);
+            Object temp;
+            if(key.equals("weight")){
+                temp = this.element.getAttribute(key);
+                this.element.setAttribute("weight",-1.0);
+                return (T) temp;
             }
-            else{
-                return null;
-            }
-
+            return (T) this.element.removeAttribute(key);
+          }
         }
+        return null;
 
     }
+
     public void remove(){
         if(this instanceof Vertex)
             this.graph.removeVertex((Vertex)this);

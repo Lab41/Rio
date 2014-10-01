@@ -19,9 +19,7 @@ import java.util.UUID;
 public class GephiGraph implements com.tinkerpop.blueprints.Graph {
 
     private GraphModel graphModel;
-
     private static final Features FEATURES = new Features();
-    int counter = 0;
 
     static{
         FEATURES.ignoresSuppliedIds = false;
@@ -66,11 +64,10 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph {
     }
     public Vertex addVertex(Object id){
 
-        this.counter++;
         Node node;
 
         if(id == null)
-            node = this.graphModel.factory().newNode(Integer.toString(counter));
+            node = this.graphModel.factory().newNode(UUID.randomUUID().toString());
         else
             node = this.graphModel.factory().newNode(id.toString());
 
@@ -96,11 +93,10 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph {
         try {
             Node node = ((GephiVertex) vertex).getRawVertex();
 
-            //Need to remove the edges associated with this vertex
+            //Remove the edges associated with this vertex
             Iterator<Edge> itrIn = this.graphModel.getDirectedGraph().getInEdges(node).toCollection().iterator();
             Iterator<Edge> itrOut = this.graphModel.getDirectedGraph().getOutEdges(node).toCollection().iterator();
 
-            //TODO: Locking
             while(itrIn.hasNext()){
                 this.graphModel.getGraph().removeEdge(itrIn.next());
             }
@@ -140,10 +136,8 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph {
 
         Edge gsEdge;
 
-        gsEdge = this.graphModel.factory().newEdge(id.toString(),source, target, this.graphModel.addEdgeType(label),0, true);
-        //gsEdge = this.graphModel.factory().newEdge(source, target, this.graphModel.addEdgeType(label),true);
+        gsEdge = this.graphModel.factory().newEdge(id.toString(),source, target, this.graphModel.addEdgeType(label),-1.0, true);
         gsEdge.setAttribute("label",label);
-        //gsEdge.setAttribute("id", id);
         this.graphModel.getGraph().addEdge(gsEdge);
 
         return new GephiEdge(gsEdge,this);
@@ -160,7 +154,6 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph {
     }
 
     public void removeEdge(com.tinkerpop.blueprints.Edge edge){
-        //TODO Figure out if locking mechanism needed
         this.graphModel.getGraph().removeEdge(this.graphModel.getGraph().getEdge(edge.getId()));
     }
 
