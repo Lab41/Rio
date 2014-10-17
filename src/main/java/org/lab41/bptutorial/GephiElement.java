@@ -39,8 +39,6 @@ abstract class GephiElement implements com.tinkerpop.blueprints.Element {
                 }
                 else{
                     return (T) this.element.getAttribute(key);
-                    //Double temp = Double.parseDouble(this.element.getAttribute(key).toString());
-                    //return (T) (Object)(Float.parseFloat(this.element.getAttribute(key).toString()));
                 }
             }
 
@@ -56,6 +54,8 @@ abstract class GephiElement implements com.tinkerpop.blueprints.Element {
         Set<String> nodeDefaultCols = new HashSet<String>();
         Set<String> edgeDefaultCols = new HashSet<String>();
 
+
+        //Keep track of default attributes set in Graphstore
         nodeDefaultCols.add("id");
         nodeDefaultCols.add("timestamp");
         nodeDefaultCols.add("label");
@@ -64,9 +64,12 @@ abstract class GephiElement implements com.tinkerpop.blueprints.Element {
         edgeDefaultCols.add("timestamp");
         edgeDefaultCols.add("label");
 
+
+        //TODO Consider edge case where you are actually adding attribute with the names above
         Object[] keyArr = this.element.getAttributeKeys().toArray();
         if(this instanceof Vertex){
             for(int i = 0;  i < keyArr.length; i++){
+                //Check if non default attributes are populated
                 if(!nodeDefaultCols.contains(keyArr[i])){
                     if(this.element.getAttribute(keyArr[i].toString()) != null){
                         keys.add(keyArr[i].toString());

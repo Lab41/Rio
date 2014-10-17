@@ -20,6 +20,8 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph {
 
     private GraphModel graphModel;
     private static final Features FEATURES = new Features();
+    private static final double defaultWeight = -1.0;
+    private static final boolean defaultEdgeType = true;
 
     static{
         FEATURES.ignoresSuppliedIds = false;
@@ -47,7 +49,7 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph {
         FEATURES.supportsThreadedTransactions = false;
         FEATURES.supportsTransactions = false;
         FEATURES.supportsUniformListProperty = false;
-        FEATURES.supportsVertexIndex = true;
+        FEATURES.supportsVertexIndex = false;
         FEATURES.supportsVertexIteration = true;
         FEATURES.supportsVertexKeyIndex = false;
         FEATURES.supportsVertexProperties = true;
@@ -66,6 +68,7 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph {
 
         Node node;
 
+        //Add id for cases where id is not specified
         if(id == null)
             node = this.graphModel.factory().newNode(UUID.randomUUID().toString());
         else
@@ -93,7 +96,7 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph {
         try {
             Node node = ((GephiVertex) vertex).getRawVertex();
 
-            //Remove the edges associated with this vertex
+            //Remove the edges associated with this vertex, use an iterator to avoid holding a lock
             Iterator<Edge> itrIn = this.graphModel.getDirectedGraph().getInEdges(node).toCollection().iterator();
             Iterator<Edge> itrOut = this.graphModel.getDirectedGraph().getOutEdges(node).toCollection().iterator();
 
@@ -136,7 +139,7 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph {
 
         Edge gsEdge;
 
-        gsEdge = this.graphModel.factory().newEdge(id.toString(),source, target, this.graphModel.addEdgeType(label),-1.0, true);
+        gsEdge = this.graphModel.factory().newEdge(id.toString(),source, target, this.graphModel.addEdgeType(label),defaultWeight, defaultEdgeType);
         gsEdge.setAttribute("label",label);
         this.graphModel.getGraph().addEdge(gsEdge);
 
@@ -178,7 +181,7 @@ public class GephiGraph implements com.tinkerpop.blueprints.Graph {
     }
 
     public void shutdown(){
-        //this.shutdown();
+        //Throw an Unsupported Exception
     }
 
     public String toString(){

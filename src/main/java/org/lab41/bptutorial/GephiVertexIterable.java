@@ -22,6 +22,8 @@ public class GephiVertexIterable<T extends Vertex> implements CloseableIterable<
         this.nodes = nodes;
     }
 
+    //Instead of checking
+
     public Iterator<GephiVertex> iterator(){
         return new Iterator<GephiVertex>() {
 
@@ -31,38 +33,33 @@ public class GephiVertexIterable<T extends Vertex> implements CloseableIterable<
             @Override
             public boolean hasNext() {
 
-                if (null != this.nextNode)
+                /*if (null != this.nextNode)
                     return true;
                 else {
                     while (this.it.hasNext()) {
                         final Node node = this.it.next();
-                        try {
-
                             this.nextNode = node;
                             return true;
-                        } catch (final IllegalStateException e) {
-                        }
                     }
                     return false;
-                }
+                }*/
+                return this.it.hasNext();
             }
 
             @Override
             public GephiVertex next() {
-                if (null != this.nextNode) {
+                /*if (null != this.nextNode) {
                     final Node temp = this.nextNode;
                     this.nextNode = null;
                     return new GephiVertex(temp, graph);
                 } else {
                     while (true) {
                         final Node node = this.it.next();
-                        try {
                             return new GephiVertex(node, graph);
-                        } catch (final IllegalStateException e) {
-                           //TODO need to consider this case
-                        }
                     }
-                }
+                }*/
+                return new GephiVertex(this.it.next(),graph);
+
             }
 
             @Override

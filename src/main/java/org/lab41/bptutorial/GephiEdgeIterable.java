@@ -28,7 +28,7 @@ public class GephiEdgeIterable <T extends com.tinkerpop.blueprints.Edge> impleme
             @Override
             public boolean hasNext() {
 
-                if (null != this.nextEdge)
+                /*if (null != this.nextEdge)
                     return true;
                 else {
                     while (this.it.hasNext()) {
@@ -41,14 +41,15 @@ public class GephiEdgeIterable <T extends com.tinkerpop.blueprints.Edge> impleme
                         }
                     }
                     return false;
-                }
+                }*/
+                return this.it.hasNext();
 
             }
 
             @Override
             public GephiEdge next() {
 
-                if (null != this.nextEdge) {
+                /*if (null != this.nextEdge) {
                     final Edge temp = this.nextEdge;
                     this.nextEdge = null;
                     return new GephiEdge(temp, graph);
@@ -61,7 +62,8 @@ public class GephiEdgeIterable <T extends com.tinkerpop.blueprints.Edge> impleme
 
                         }
                     }
-                }
+                }*/
+                return new GephiEdge(this.it.next(), graph);
 
             }
 

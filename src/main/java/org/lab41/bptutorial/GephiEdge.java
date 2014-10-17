@@ -17,6 +17,9 @@ public class GephiEdge extends GephiElement implements com.tinkerpop.blueprints.
     }
 
     public Vertex getVertex(Direction direction) throws IllegalArgumentException{
+
+
+        //Graphstore source = Blueprints OUT
         if(direction.equals(Direction.OUT)){
             return new GephiVertex(((Edge) this.element).getSource(),this.graph);
         }
