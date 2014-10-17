@@ -22,44 +22,20 @@ public class GephiVertexIterable<T extends Vertex> implements CloseableIterable<
         this.nodes = nodes;
     }
 
-    //Instead of checking
-
+    //Wrap Graphstore Iterator
     public Iterator<GephiVertex> iterator(){
         return new Iterator<GephiVertex>() {
 
             private Iterator<Node> it = nodes.toCollection().iterator();
-            private Node nextNode = null;
 
             @Override
             public boolean hasNext() {
-
-                /*if (null != this.nextNode)
-                    return true;
-                else {
-                    while (this.it.hasNext()) {
-                        final Node node = this.it.next();
-                            this.nextNode = node;
-                            return true;
-                    }
-                    return false;
-                }*/
                 return this.it.hasNext();
             }
 
             @Override
             public GephiVertex next() {
-                /*if (null != this.nextNode) {
-                    final Node temp = this.nextNode;
-                    this.nextNode = null;
-                    return new GephiVertex(temp, graph);
-                } else {
-                    while (true) {
-                        final Node node = this.it.next();
-                            return new GephiVertex(node, graph);
-                    }
-                }*/
                 return new GephiVertex(this.it.next(),graph);
-
             }
 
             @Override

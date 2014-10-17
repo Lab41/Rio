@@ -19,52 +19,20 @@ public class GephiEdgeIterable <T extends com.tinkerpop.blueprints.Edge> impleme
         this.edges = edges;
     }
 
+    //Wrap Graphstore Iterator
     public Iterator<GephiEdge> iterator(){
         return new Iterator<GephiEdge>() {
 
             private Iterator<Edge> it = edges.toCollection().iterator();
-            private Edge nextEdge = null;
 
             @Override
             public boolean hasNext() {
-
-                /*if (null != this.nextEdge)
-                    return true;
-                else {
-                    while (this.it.hasNext()) {
-                        final Edge edge = this.it.next();
-                        try {
-
-                            this.nextEdge = edge;
-                            return true;
-                        } catch (final IllegalStateException e) {
-                        }
-                    }
-                    return false;
-                }*/
                 return this.it.hasNext();
-
             }
 
             @Override
             public GephiEdge next() {
-
-                /*if (null != this.nextEdge) {
-                    final Edge temp = this.nextEdge;
-                    this.nextEdge = null;
-                    return new GephiEdge(temp, graph);
-                } else {
-                    while (true) {
-                        final Edge edge = this.it.next();
-                        try {
-                            return new GephiEdge(edge, graph);
-                        } catch (final IllegalStateException e) {
-
-                        }
-                    }
-                }*/
                 return new GephiEdge(this.it.next(), graph);
-
             }
 
             @Override
