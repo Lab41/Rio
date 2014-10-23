@@ -1,6 +1,6 @@
 Rio
 =========
-<small>Gephi <3 Blueprints</small>
+<small>Gephi + Blueprints = Scalable Graph Visualizations</small>
 
   - [Blueprints] is a collection of interfaces and test suites for a standardized property graph data model
   - [Gephi] is an interactive visualization and exploration platform for graphs
@@ -12,20 +12,21 @@ Installation
 ```sh
 # prerequisites
 sudo apt-get install --assume-yes maven
+# <manually install JDK7>: download and install from http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html"
 
 # build v0.0.1 of gephi graphstore (omit once gephi publishes to mvn repo)
 git clone git@github.com:gephi/graphstore.git
 cd graphstore/store
 mvn package
-# ensure target/graphstore-0.1.1-SNAPSHOT.jar is in project/system classpath of IDE (i.e. IntelliJ or Eclipse)
+# <manually add jar>: ensure target/graphstore-0.1.1-SNAPSHOT.jar is in classpath for OS or IDE (i.e. IntelliJ/Eclipse)
 
 # clone project
-git clone [FIXME-url] rio
+git clone git@github.com:LAB41/rio.git rio
 cd rio
 mvn install
 
 # verify tests
-# run in IDE: src/test/java/org.lab41.bptutorial.TinkerTestSuite
+# <manually run> in IDE: src/test/java/org.lab41.bptutorial.TinkerTestSuite
 ```
 
 
@@ -38,11 +39,11 @@ Goals
 Progress
 --------------
 1. Implementation:
-    - Graph      &check;
-    - Element    &check;
-    - Node       &check;
-    - Edge       &check;
-    - Manual Indexing   &#x2717; (unsupported by Gephi's public APIs)
+    - &#10004; Graph
+    - &#10004; Element
+    - &#10004; Node
+    - &#10004; Edge
+    - &#x2717; Manual Indexing (unsupported by Gephi's public APIs)
 2. Ouplementation:
     - Design under review
 3. Visualization
