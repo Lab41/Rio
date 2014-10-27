@@ -1,10 +1,13 @@
 Rio
 =========
-<small>Gephi + Blueprints = Scalable Graph Visualizations</small>
+<small>Gephi + Blueprints = Visualizing Large-scale Graphs</small>
 
   - [Blueprints] is a collection of interfaces and test suites for a standardized property graph data model
   - [Gephi] is an interactive visualization and exploration platform for graphs
   - Rio is the connective tissue between the two
+  <p align="center">
+    <img src="assets/images/logo_ecosystem_small.png" alt="Rio Ecosystem">
+  </p>
 
 Installation
 --------------
