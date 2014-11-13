@@ -60,7 +60,7 @@ Contributers
 License
 ----
 
-MIT
+Apache 2.0
 
 
 [Blueprints]: https://github.com/tinkerpop/blueprints/wiki
