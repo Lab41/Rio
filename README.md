@@ -41,16 +41,16 @@ Goals
 
 Progress
 --------------
-1. Implementation:
+**Note**: Development is currently stopped post-implementation given the impending release of <a href="http://www.tinkerpop.com/docs/3.0.0-SNAPSHOT">Tinkerpop3</a>, which includes a <a href="http://www.tinkerpop.com/docs/3.0.0-SNAPSHOT/#gephi-plugin">Streaming Plugin for Gephi</a>
+
+1. &#10004; Implementation:
     - &#10004; Graph
     - &#10004; Element
     - &#10004; Node
     - &#10004; Edge
     - &#x2717; Manual Indexing (unsupported by Gephi's public APIs)
-2. Ouplementation:
-    - Design under review
-3. Visualization
-    - Design pending completion of Ouplementation
+2. &#x2717; Ouplementation:
+3. &#x2717; Visualization
 
 Contributers
 --------------
